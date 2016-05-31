@@ -1,0 +1,107 @@
+<nav class="navbar navbar-default app_nav" role="navigation">
+	<div class="navbar-header">
+		<a data-ui-sref="accueilState">
+			<img src="common/habillage/images/soprasteria_logo.png" alt="logo_sopra" style="margin-left: 20px;">
+		</a>
+	</div>
+	<ul class="nav navbar-nav" id="menu_header">
+		<li class="couleurListe">
+			<a data-ui-sref=".accueil_cnamts" class="btn ">CNAMTS</a>
+		</li>
+		<li class="separate_menu">|</li>
+		<li class="couleurListe">
+			<a ui-sref=".standardCnamts">Standard CNAMTS</a>
+		</li>
+		<li class="separate_menu">|</li>
+		<li class="dropdown couleurListe" >
+			<a data-toggle="dropdown">
+				organigrammes
+				<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu sousMenu">
+				<li>
+					<a ui-sref=".organigrammeClient">Organigramme client (CNAMTS)</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a ui-sref=".dirPoleOuest">direction pole ouest</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a data-ui-sref=".dirPoleOuestEspPro">direction pole ouest-Espace Pro</a>
+				</li>
+			</ul>
+		</li>
+		<li class="separate_menu">|</li>
+		<li data-ui-sref=".ecosysteme" class="dropdown couleurListe">
+			<a data-toggle="dropdown">
+				écosystème CNAMTS
+				<b class="caret"></b>
+			</a>
+			<ul class="dropdown-menu sousMenu">
+				<li>
+					<a data-ui-sref=".cadresOracle">cadres oracle</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a data-ui-sref=".cadresToplink">cadres Toplink</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a data-ui-sref=".cadresWeblogic"> cadres Weblogic</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a data-ui-sref=".envMachineCnamts">Environnements machine CNAMTS</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a data-ui-sref=".refabricationLogicielle">Refabrication logicielle</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a data-ui-sref=".installation_KS_V5">Installation KS V5</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a data-ui-sref=".starterKits">Starter Kits</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a data-ui-sref=".jms">JMS</a>
+				</li>
+				<li class="divider"></li>
+				<li>
+					<a data-ui-sref=".envEspacePro">Installation/Maintient des env Esp-Pro</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<button type="button" class="btn btn-default navbarbtn btn_page_accueil" data-toggle="collapse" data-target="#btnRetour">
+		<span class="glyphicon glyphicon-chevron-down"></span>
+	</button>
+</nav>
+<div id="btnRetour" class="col-lg-2 menu_page_accueil collapse">
+	<ul class="list-group">
+		<a data-ui-sref="plateau.presentationPlateau" class="list-group-item" id="plateau">
+			<span class="glyphicon glyphicon-chevron-right pullright"></span>
+			Plateau
+		</a>
+		<a data-ui-sref="projets" class="list-group-item">
+			<span class="glyphicon glyphicon-chevron-right pullright"></span>
+			Projets,Outils et Processus
+		</a>
+		<a data-ui-sref="cnamts.accueil_cnamts" class="list-group-item">
+			<span class="glyphicon glyphicon-chevron-right pullright"></span>
+			Cnamts
+		</a>
+		<a data-ui-sref="nouveauCollaborateur" class="list-group-item">
+			<span class="glyphicon glyphicon-chevron-right pullright"></span>
+			Nouveau	Collaborateur
+		</a>
+		<a data-ui-sref="accueilState" class="list-group-item">
+			<span class="glyphicon glyphicon-home"></span>
+			<strong>Accueil</strong>
+		</a>
+	</ul>
+</div>

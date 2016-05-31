@@ -1,0 +1,212 @@
+<div class="container backgroundContainer">
+	<pre><H3 class="center pre">A-SPRING</H3></pre>
+	<p>A partir du Starter Kit V10, les équipes DDST ont introduit le
+		framework Spring pour la gestion des différents éléments de chacune
+		des couches. En effet, toutes les classes d'exposition de chacune des
+		couches sont gérées à l'aide de Singletons déclarés sous la forme de
+		beans Spring (dans des fichiers de configurations Spring
+		particuliers). Il sont ensuite directement injectés à l'aide
+		d'annotation dans les différentes couches :
+	</p>
+	<p>Code java :</p>
+	<div class="divStandard">
+		<span>
+			Injection du BS
+		</span><br>
+		<span>
+			expand source
+		</span>
+	</div>
+	<p>Configuration Spring</p>
+	<div class="divStandard">
+		<span>
+			Configuration Spring
+		</span><br>
+		<span >
+			expand source
+		</span>
+	</div>
+	<p>
+		Spring est aussi utilisé pour la déclaration des ressources
+		techniques transverses tels les datasources ou les Transaction
+		Manager.
+	</p>
+<!-- FIN PARTIE SPRING -->
+
+	<pre><H3 class="center pre">B-Log4J</H3></pre>
+	<p>Pour les actions de journalisation, nous utilisons la l'API log4j
+		(en version 1.4, c'est à dire sans les appenders asynchrones). Cette
+		API permet de définir un niveau de journalisation qui sera dépendant de
+		l'environnement :
+	</p>
+	<div>
+		<ul>
+			<li>TRACE</li>
+			<li>DEBUG</li>
+			<li>INFO</li>
+			<li>WARN</li>
+			<li>ERROR</li>
+			<li>FATAL</li>
+		</ul>
+	</div>
+	<div>
+		<p>Il faut bien prendre en compte que les niveaux de logs ne sont pas
+			exclusifs mais loggent bien l'ensemble des niveaux supérieurs. Par
+			exemple, si le niveau d'un logger est DEBUG, ce dernier loggera aussi
+			toutes les traces de niveau INFO, WARN, ERROR et FATAL. 
+		</p>
+		<p>
+			De manière
+			générale, les applications en production à la CNAMTS seront en niveau
+			de log ERROR. Il faut donc bien faire attention à logger toutes les
+			exceptions techniques en niveau ERROR. Sauf exception projet (MODE),
+			il n'y a pas d'autres niveaux de logs à utiliser. Il ne faut donc pas
+			hésiter à utiliser des loggers en niveau DEBUG très utiles en phase de
+			développement. Attention toutefois à ne pas effectuer de traitement au
+			sein d'un log car le logger associé effectuera l'action avant de
+			vérifier si le niveau est suffisant pour logger. Par exemple :
+		</p>
+	</div>
+	<div>
+		<p>Ce qu'il ne faut surtout pas faire :</p>
+	</div>
+	<div class="divStandard">
+		<span>
+			Dirty Code<br>
+		</span><br>
+		<span>
+			LOGGER.debug(mCache.getCacheName() +" getData(" + pKey.toString() + ")");
+		</span>
+	</div>
+	<div>
+		<p>Ce qui est bien plus propre :</p>
+	</div>
+	<div class="divStandard">
+		<span>
+			Bonne façon de logger<br>
+		</span><br>
+		<span>
+			if (LOGGER.isDebugEnabled()) {<br>
+			    if (mCache != null && pKey != null) {<br>
+			        LOGGER.debug(mCache.getCacheName() +" getData(" + pKey.toString() + ")");<br>
+			    }<br>
+			}
+		</span>
+	</div>
+	<div>
+		<p>
+			La CNAMTS interdit l'utilisation de DailyRollingFileAppender. Préférez donc de simples FileAppender. 
+		</p>
+		<p>L'utilisation des logger accepte une forme d'héritage. En effet, un
+			logger est récupéré par son nom. Une bonne manière de faire est
+			d'utiliser les packages pour hiérarchiser ses loggers et ainsi avoir
+			une journalisation optimale. Par exemple :
+		</p>
+	</div>
+	<div class="divStandard">
+		<span>
+			Configuration log4J<br>
+		</span><br>
+		<span>
+			log4j.rootLogger=TRACE, stdout<br>
+	 
+			log4j.logger.fr.cnamts.ac.metier.bo=INFO,StatMetier <br>
+			log4j.additivity.fr.cnamts.ac.metier.bo=false<br>
+			 
+			log4j.logger.fr.cnamts.ac.metier=TRACE, MetierACDev <br>
+			log4j.additivity.fr.cnamts.ac.metier.additivity=false
+		</span>
+	</div>
+	<div>
+		<p>Ici, le logger "fr.cnamts.ac.metier.bo" est prioritaire sur le
+			logger "fr.cnamts.ac.metier".
+		</p>
+		<p>C'est à dire que si la récupération du Logger se fait de la façon
+			suivante, alors c'est le premier qui sera sélectionné.
+		</p>		
+	</div>
+	<div class="divStandard">
+		<span>
+			Récupération logger 1<br>
+		</span><br>
+		<span>
+			/** * Loggeur */ <br>
+			private static final Logger<br>
+			LOGGER = Logger.getLogger(fr.cnamts.ac.metier.bo.CabinetBO.class);
+		</span>
+	</div>
+	<div>
+		<p>
+			Par contre, s'il est récupéré de la façon suivante, ce sera le deuxième.
+		</p>
+	</div>
+	<div class="divStandard">
+		<span>
+			Récupération logger 2<br>
+		</span><br>
+		<span>
+			/**     
+			* Loggeur     
+			*/  <br>
+			private  static  final  Logger LOGGER = Logger.getLogger(fr.cnamts.ac.metier.bs.cache.TypeCache.class );
+		</span>
+	</div>
+	<div>
+		<p>Si aucun logger configuré ne répond aux critères de récupération, ce
+			sera le Root Logger qui sera utilisé :
+		</p>
+	</div>
+	<div class="divStandard">
+		<span>
+			Récupération logger 3<br>
+		</span><br>
+		<span>
+			/**      
+			* Loggeur      
+			*/   <br>
+			private  static  final  Logger LOGGER = Logger.getLogger(fr.cnamts.socle.metier.bs.GeneriqueBS.class);
+		</span>
+	</div>
+	<div>
+		<p>La propriété 'additivity' vaut true par défaut. En la mettant à
+			false, cela permet de ne tracer la log que dans l'appender courant, et
+			pas dans les appenders parents. Cela évite ainsi d'avoir plusieurs
+			fois la même trace dans des fichiers différents.
+		</p>
+	</div><!-- FIN PARTIE LOG4J -->
+	<pre><h3 class="center pre">C-Struts</h3></pre>
+	<div>
+		<p><!-- à compléter -->
+			Pour la couche de présentation, les applications pré SKV10 préconisent l'utilisation de Struts.
+		</p>
+	</div><!-- FIN PARTIR STRUTS -->
+	<pre><h3 class="center pre">D-Toplink</h3></pre>
+	<div>
+		<p><!-- à compléter -->
+			La persistance des données est (sauf cas particuliers comme PRADO ou
+			MODE qui sont en JDBC) effectuée à l'aide de l'ORM Toplink. Cette
+			couche de persistance a été instrumentée par les équipes de la CNAMTS
+			qui nous fournissent l'API à utiliser au sein des cadres Toplink
+			(présenté juste en dessous).
+		</p>
+		<p>Les principes sont à peu près similaires au framework hibernate. Le
+			modèle objet est mappé sur le modèle relationnel et les requêtes SQL
+			sont masquées au travers de Finder Toplink. Ce sont des BO Toplink
+			qui sont manipulés.
+		</p>
+	</div><!-- FIN PARTIR Toplink -->
+	<pre><h3 class="center pre">E-SpringMVC</h3></pre>
+	<div>
+		<p><!-- à compléter -->
+			Pour la couche de présentation, les applications pré SKV10
+			préconisent l'utilisation de Struts.
+		</p>
+	</div><!-- FIN PARTIR SpringMVC -->
+	<pre><h3 class="center pre">F-SpringBatch</h3></pre>
+	<div>
+		<p><!-- à compléter -->
+			Pour la couche de présentation, les applications pré SKV10
+			préconisent l'utilisation de Struts.
+		</p>
+	</div><!-- FIN PARTIR SpringBatch -->
+</div>

@@ -1,0 +1,6 @@
+{
+  "directory": "bower_components",
+  "proxy": "http://ntes.proxy.corp.sopra:8080",
+  "https-proxy":"http://ntes.proxy.corp.sopra:8080"
+  
+}

@@ -1,0 +1,230 @@
+<div class="container backgroundContainer">
+	<pre><h3 class="center pre">Installation KS V5</h3></pre>
+	<p><strong>Pré requis : </strong></p>
+	<ul>
+		<li>
+			Avant l'install, il faut commencer par faire un undeploy du
+			livrable installé avec la commande :
+		</li>
+	</ul>
+	<pre>
+		cn_app_manage.sh -undeploy
+	</pre>
+	<ul>
+		<li>
+			Vérifier que le fichier weblogic-application.xml ne contient pas
+			de dépendances commitées par erreur, par exemple VP_W et WP_W pour le
+			composant AC_M. si c'est le cas il faut les supprimer avant de
+			tagguer.
+		</li>
+	</ul>
+	<a data-ui-sref="#" class="texteGras"> 
+		Voici le support de la CNAM pour la mise en place du KS V5
+		--> Presentation_KS5_2015-02-24.pptx 
+	</a>
+	<p class="texteGras">
+		Script shell d'installation :
+	</p>
+	<p>
+		Composant déjà en KS : Il faut remplacer dans le script
+		install_auto.sh l'appel à cn_majmodele par cn_confauto
+	</p>
+	<p class="text-danger">
+		Attention, le cn_confauto n'est à utiliser que sur les composantns
+		contenant au moins une variable KS.
+	</p>
+	<p>
+		Nouveau composant : Il faut que le script install_auto.sh fasse
+		appel à cn_confauto (s'inspirer d'un composant utilisant déjà le KS V5
+		comme MODE_J)
+	</p>
+	<p>
+		<strong>Les fichiers de configurations :</strong> Il faut utiliser une clé pour
+		toutes les propriétés qui sont à valoriser lors de l'installation. Les
+		clés doivent respecter les normes définis dans le document suivant :
+		<a href="http://cvs.cnamts.ext.sopra/cgi-bin/viewvc.cgi/2007_DRI/KS_AD/doc/Norme%20de%20nommage%20des%20variables%20KS.doc?view=log&pathrev=KS050105A">
+			http://cvs.cnamts.ext.sopra/cgi-bin/viewvc.cgi/2007_DRI/KS_AD/doc/Norme%20de%20nommage%20des%20variables%20KS.doc?view=log&pathrev=KS050105A
+		</a>
+	</p>
+	<p>
+		Certaines clés (communes à toutes les applications) existent déjà :
+	</p>
+	<ul>
+		<li>
+			USER_CALCULATED : c’est le user applicatif
+		</li>
+		<li>
+			CODEAPPLI_CALCULATED : le code applicatif
+		</li>
+		<li>
+			ENV_CALCULATED : l’environnement
+		</li>
+		<li>
+			INSTANCE_CALCULATED : l’instance
+		</li>
+		<li>
+			USAGE_CALCULATED : l’usage
+		</li>
+		<li>
+			APP_CALCULATED : répertoire des $HOME des users applicatifs
+		</li>
+		<li>
+			LIV_CALCULATED : répertoire d’extraction des livrables
+		</li>
+	</ul>
+	<p class="texteGras">
+		Lancement de l'installation :
+	</p>
+	<p>
+		En dev, avant de lancer l'install KS, il faut surcharger la variable
+		DICO pour qui doit pointer sur un répertoire dans lequel le user
+		applicatif a les droits d'écriture :
+	</p>
+	<pre>
+		export DICO=/app/[user applicatif]
+	</pre>
+	<p>
+		Pour installer le composant en KS V5 avec la conf auto, il faut
+	</p>
+	<ul>
+		<li>
+			copier l'archive depuis le SAS de refab :
+		</li>
+	</ul>
+	<p>
+		NB : vérifier que le répertoire du sas choisi correspond bien au
+		socle technique que vous utilisez.
+	</p>
+	<pre>
+		cp /refab_centrale/sas_rci/cnamts/st1.0-aix5.3/[TAG installé]_A/[TAG installé].tar.gz savliv/
+	</pre>
+	<p>
+		NB : vous pouvez vérifier que la copie a fonctionné en allant sur
+		dans le répertoire savliv puis en executant la la commande ls -l,
+		n'oubliez pas de vous repositionner sur le répertoire parent
+	</p>
+	<pre>
+		cd savliv<br>
+		ls -l<br>
+		cd ..
+	</pre>
+	<ul>
+		<li>
+			extraire l'archive : installLivrable -xl savliv/[targz
+			refabriqué], ce dernier indique qu'il n'a fait qu'extraire l'archive.
+		</li>
+	</ul>
+	<div class="row">
+		<img src="cnamts/habillage/images/image1InstallKSV5.png" class="col-xs-12 img-responsive"></img>
+	</div>
+	<p class="texteGras">
+		Valorisation du dictionnaire :
+	</p>
+	<p>
+		Pour valoriser les clés, il faut le faire soit manuellement, soit a
+		l'aide de la commande ConfLivrable.sh.
+	</p>
+	<p>
+		Manuellement, il faut créer le fichier dictionnaire (dans le
+		répertoire vers lequel pointe la variable DICO - echo $DICO). Le
+		dictionnaire doit s'appeler avec le nom de l'environnement (a10 pour
+		le user v7a10 par exemple). Ensuite, chaque clé doit apparaître de la
+		façon suivante : clé=valeur de la clé
+	</p>
+	<div class="row">
+		<img class="col-xs-6 img-responsive" src="cnamts/habillage/images/image2InstallKSV5.png"></img>
+	</div>
+	<p>
+		Avec la commande ConfLivrable.sh, il faut lancer la commande suivante :
+	</p>
+	<pre>
+		ConfLivrable.sh -e [environnement] -g [TAG installé]
+	</pre>
+	<p>
+		La commande va lister toutes les propriétés à valoriser et va
+		demander à l'utilisateur de leur donner une valeur. L'invite de
+		commande va ensuite demander une validation des valeurs.
+	</p>
+	<div class="row">
+		<img class="col-xs-12 img-responsive" src="cnamts/habillage/images/image3InstallKSV5.png"></img>
+	</div>
+	<p>
+		Cette commande va uniquement créer le dictionnaire sans valoriser
+		les fichiers de configuration.
+	</p>
+	<p>
+		Il faut maintenant exécuter l'installation du composant (si vous
+		installez un tag inférieur ou égal à celui déjà installé, il faut
+		ajouter l'option -f) :
+	</p>
+	<pre>
+		installLivrable.sh -ixl savliv/[TAG installé].tar.gz
+	</pre>
+	<div class="row">
+		<img class="col-xs-12 img-responsive" src="cnamts/habillage/images/image4InstallKSV5.png"></img>
+	</div>
+	<p>
+		Il est aussi possible de forcer la mise à jour des fichiers de
+		configuration avec le KS V5. Pour ce faire, il faut lancer la commande
+		suivante :
+	</p>
+	<div class="row">
+		<img class="col-xs-12 img-responsive" src="cnamts/habillage/images/image5InstallKSV5.png"></img>
+	</div>
+	<p>
+		Pour toute information supplémentaire, les doc du KS sont
+		disponibles au lien suivant :
+		<a href="http://cvs.cnamts.ext.sopra/cgi-bin/viewvc.cgi/2007_DRI/KS_AD/doc/?pathrev=">
+			http://cvs.cnamts.ext.sopra/cgi-bin/viewvc.cgi/2007_DRI/KS_AD/doc/?pathrev=
+		</a>
+	</p>
+	<p>
+		Pour la rédaction de la documentation d'installation, vous devez vous
+		référer à la note présente sur le CVS : 
+		<a href="http://cvs.cnamts.ext.sopra/cgi-bin/viewvc.cgi/2007_DRI/KS_AD/doc/KS_A%20Template%20documentation%20installation.doc?view=log">
+			http://cvs.cnamts.ext.sopra/cgi-bin/viewvc.cgi/2007_DRI/KS_AD/doc/KS_A%20Template%20documentation%20installation.doc?view=log
+		</a>
+	</p>
+	<p>
+		Le projet C8_J peut être pris en exemple pour la documentation
+		d'installation.
+	</p>
+	<p class="texteGras">
+		Post install :
+	</p>
+	<p>
+		Pour les composants métier, avant de déployer, il faut vérifier les
+		fichiers suivants (s'ils existent) dans le dossier conf:
+	</p>
+	<ul>
+		<li>
+			s8j.properties : la ligne authapp.nom.application doit être égale
+			à logica.
+		</li>
+		<li>
+			ParamMetier-xx.properties : la ligne stats.log.mode doit être
+			égale à file.
+		</li>
+	</ul>
+	<p>
+		Pour terminer par faire un deploy du livrable installé avec la commande :
+	</p>
+	<pre>
+		cn_app_manage.sh -deploy
+	</pre>
+	<p class="texteGras">
+		Problème rencontrés :
+	</p>
+	<pre>
+		Prise en compte du plan de deploiement : /app/aca43/conf/plan.xml
+ 		>> Distribution de l'application AC_M ==> Erreur
+    	weblogic.management.DeploymentException: [J2EE:160149]Error while processing library references. Unresolved application library  references, defined in weblogic-application.xml: [Extension-Name: VP_W, 
+		exact-match: true], [Extension-Name: WP_W, exact-match: true].
+	</pre>
+	<p>
+		Si lors du déploiement vous rencontrez l'erreur ci-dessus, c'est que
+		votre weblogic-application.xml contient des dépendances qu'il ne
+		devrait pas ici : VP_W et WP_W. il faut donc les supprimer et
+		reprendre toutes les étapes en commençant par le TAG.
+	</p>
+</div>

@@ -1,0 +1,31 @@
+<div class="container backgroundContainer">
+	<pre><h3 class="center pre">Cadres Toplink</h3></pre>
+	<div>
+		<p>A l'aide du cadre Oracle, les équipes de DIT vont générer un
+			cadre Toplink qui contiendra l'ensemble de l'API d'accès aux données
+			(BO Toplink, Finder par défaut ...). A chaque modification du cadre
+			Oracle, il faut donc se demander s'il est nécessaire de faire évoluer
+			le cadre Toplink.
+		</p>
+		<p>Le cadre Toplink prend aussi d'autres considérations en compte.
+			Pour ce faire, le projet va remplir une demande de cadre applicatif
+			Toplink. C'est la plupart du temps la CNAMTS qui fait cette demande.
+		</p>
+		<p>Il faut aussi ajouter le DDL (complet pour une première
+			livraison et complet et différentiel pour une mise à jour).
+		</p>
+		<p>Il faut aussi ajouter un questionnaire Toplink comme suit :</p>
+		<p>cadre_toplink_.xls</p>
+		<p>Il faut aussi toujours joindre le Dossier d'Architecture, qu'il
+			ait été modifié ou non.
+		</p>
+		<p>Par exemple, dans un souci de performance, la CNAMTS limite
+			forcément à 300 le nombre de résultats max retournés dans un contexte
+			transactionnel.
+		</p>
+		<p>Ce n'est pas forcément le cas pour les batchs, la CNAMTS
+			accepte une limite supérieure mais il faut utiliser la méthode
+			fetch() du cadre Toplink dans ses finders.
+		</p>
+	</div>
+</div>

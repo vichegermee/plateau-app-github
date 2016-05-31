@@ -1,0 +1,145 @@
+@CHARSET "ISO-8859-1";
+
+img[alt*="logo_sopra"] {
+	width: 25rem;
+	margin-left: 20px;
+}
+.container.backgroundContainer{
+	background-color:#fff;
+	padding-bottom: 2rem;
+}
+.plateau_menu {
+	margin-left: 10rem;
+}
+
+.separate_menu {
+	margin-top: 1.5rem
+}
+
+.text_menu_color {
+	color: white !important;
+}
+
+.content-trombinoscope {
+	margin-top: 5rem;
+}
+
+.collaborateur {
+	margin-left: 0.3rem;
+	margin-bottom: 5rem;
+}
+
+.content-collaborateur {
+	width: 115.3rem;
+}
+
+img[alt*="img_collaborateur"] {
+	width: 15rem;
+	height: 20rem;
+}
+
+.info_collaborateur {
+	background-color: #ddd;
+	border: 1px black solid;
+	height: 20rem;
+	text-align: center;
+	width: 20rem;
+	float: left;
+	bottom: 0rem;
+	margin-right: -2.4rem;
+	display: inline-block;
+	border-left: 0px;
+}
+
+.content_img_collaborateur {
+	width: auto;
+	float: left;
+	padding-right: 0rem;
+}
+
+.content_button_croix {
+    position: absolute;
+    z-index: 2;
+    bottom: 14.5rem;
+    width: 50px;
+    left: 16.5rem;
+}
+
+.button_croix {
+	background-color: black;
+	border-radius: 0px;
+	border:0px;
+}
+a.button_croix:hover {
+	background-color: black;
+	border-radius: 0px;
+	border:0px;
+}
+
+}
+.separateur_horizontal {
+   border-top: 1px solid  #333 !important;
+}
+
+.croix {
+	color: #F5F5F5
+}
+
+.nom_collaborateur {
+	font-weight: bold;
+	font-size: 1.8rem;
+}
+.myImg_enter{
+	opacity : 0.5;
+}
+.myImg_leave{
+	opacity : 1
+}
+.containerCollabCol{
+	width: 38rem;
+	height: 25rem;
+	padding-top: 2rem;
+	margin: 0.1rem 0.1rem 0.1rem;
+	box-shadow: 3px 3px 5px #C0C0C0;
+	overflow: auto;
+}
+.containerCollabRow{
+	margin-left: 1rem;
+}
+.separateur_collaborateur {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.separationFonction{
+	height: 2px; 
+	color: #CF022B; 
+	background-color: #CF022B; 
+	width: 95%; 
+	border: none;
+}
+
+a, a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+.buttonByFunction{
+	margin-left: 2rem;
+	background-color: #CF022B; 
+	color:#fff;
+}
+.boutonOpenAll{
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	margin-right: 2rem;
+	text-decoration: none;
+	float: right;
+}
+
+.couleurBouton, .couleurBouton:hover, .couleurBouton:visited, .couleurBouton:link, .couleurBouton:active{
+	background-color: #CF022B; 
+	color:#fff;
+}

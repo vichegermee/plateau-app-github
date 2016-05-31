@@ -1,0 +1,47 @@
+<nav class="navbar navbar-default app_nav" role="navigation">
+	<div class="navbar-header">
+		<a ui-sref="accueilState"><img
+			src="common/habillage/images/soprasteria_logo.png" alt="logo_sopra"></a>
+	</div>
+	<ul class="nav navbar-nav plateau_menu ">
+
+		<li class="couleurListe">
+		<a ui-sref=".presentationPlateau" class="text_menu_color"> Le
+				Plateau</a></li>
+
+
+		<li class="separate_menu">|</li>
+		<li class="couleurListe"><a class="text_menu_color"
+			ui-sref=".trombinoscope">Trombinoscope</a></li>
+		<li class="separate_menu">|</li>
+		<li class="couleurListe"><a class="text_menu_color"
+			ui-sref=".communication_equipe">Communication equipe</a></li>
+	</ul>
+	<button type="button" ng-click="boutonRetour()"
+			class="btn btn-default navbarbtn btn_page_accueil">
+			<span class="glyphicon glyphicon-chevron-down"></span>
+	</button>
+	</nav>
+	<div class="col-lg-2 menu_page_accueil " ng-show="afficheMenuAccueil">
+		<ul class="list-group">
+			<a ui-sref="plateau.presentationPlateau" class="list-group-item"> <span
+				class="glyphicon glyphicon-chevron-right pullright"></span> 
+				Plateau
+			</a>
+			<a ui-sref="projets" class="list-group-item"> <span
+				class="glyphicon glyphicon-chevron-right pullright"></span>
+				Projets,Outils et Processus
+			</a>
+			<a ui-sref="cnamts.accueil_cnamts" class="list-group-item"> <span
+				class="glyphicon glyphicon-chevron-right pullright"></span> Cnamts
+			</a>
+			<a ui-sref="nouveauCollaborateur" class="list-group-item"> 
+			<span class="glyphicon glyphicon-chevron-right pullright"></span> 
+			Nouveau	Collaborateur
+			</a>
+			<a ui-sref="accueilState" class="list-group-item"> 
+				<span class="glyphicon glyphicon-home"></span> 
+				<strong>Accueil</strong>
+			</a>
+		</ul>
+	</div>

@@ -1,0 +1,78 @@
+table 
+{
+	border-collapse:collapse; border-spacing:0;
+}
+fieldset,img
+{
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var
+{
+	font-style:normal; font-weight:normal;
+ }
+caption,th
+{
+	text-align:left;
+ }
+
+q:before,q:after
+{
+	content:'';
+}
+abbr,acronym
+{
+ border:0;
+ }
+
+body
+{
+	background: #fff;
+}
+/* optional Container STYLES */
+.chart
+{
+	height: 600px;
+	margin-left: 100px;
+	 width: 900px;
+	font-family: Tahoma;
+    font-size: 14px;
+    margin-top: 5rem;
+    background-color: #D3D3C7;
+}
+.Treant > .node
+{
+ padding: 3px; border: 1px solid #484848; border-radius: 3px;
+ }
+.Treant > .node img
+{
+	width: 100%; height: 100%;
+}
+
+.Treant .collapse-switch
+ {
+  width: 100%; height: 100%; border: none;
+ }
+.Treant .node.collapsed
+{
+	background-color: #DEF82D;
+}
+.Treant .node.collapsed .collapse-switch
+{
+	background: none;
+}
+.node{
+	width:auto !important;
+}
+.node-name
+{
+	font-weight: bold;
+	 font-size: 16px
+}
+.node-title
+{
+	color: #a94442;
+}
+
+.blue {
+    background-color: #A2BDFD;
+}

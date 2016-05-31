@@ -1,0 +1,254 @@
+<div class="container backgroundContainer">
+	<pre><h3 class="center pre">Installation/Maintient des environnements Espace Pro</h3></pre>
+	<h4 class="souligne texteGras">Prérequis:</h4>
+	<hr>
+	<ul>
+		<li>
+			Faire les DDS nécessaires afin d'avoir les comptes applicatifs de
+			tous les éléments à installer (exemple : DDS CNAM_00222749).
+		</li>
+		<li>
+			Vérifier que les cadres weblo et les cadre nationaux de chaque
+			user applicatif sont à jour. (commande cn_check_cadnat.sh).
+		</li>
+		<li>
+			Créer une page du wiki spécifique pour ce domaine (cf: les pages
+			des environnements déjà existants)
+		</li>
+		<li>
+			Penser à modifier son fichier host pour prendre en compte les IP
+			de l'IHM (WP_X)
+		</li>
+	</ul>
+	<p>
+		Pour l'installation des différents composants, se reporter aux pages
+		suivantes du wiki et à la documentation:
+	</p>
+	<ul>
+		<li>
+			<a href="#">
+				Installation d'une application weblogic avec son cadre
+			</a><!-- vers cadres weblogic -->
+		</li>
+		<li>
+			<a href="#">
+				Utilisation du KS V5
+			</a><!-- vers installation KS V5 -->
+		</li>
+	</ul>
+	<h4 class="souligne texteGras">
+		Étape 1: Installation des composants métiers
+	</h4><hr>
+	<ul>
+		<li>
+			Installer, configurer et déployer l'ensemble des composants métier
+			(qui ne sont pas des ShareLibs). Effectuer les script de test
+			d'installation (/app/<strong>userXX</strong>/script) lorsqu'ils existent.
+		</li>
+		<li>
+			installer et configurer les ShareLibs (VP_J), <strong class="souligne">ne pas déployer.</strong>
+		</li>
+		<li>
+			installer et configurer WP_J, <strong class="souligne">ne pas déployer.</strong>
+		</li>
+		<li>
+			installer et configurer B4_Z (ce module n'est pas un module
+			applicatif mais un module de configuration, il ne se déploie pas.)
+		</li>
+		<li>
+			déployer les SharLibs (VP_J) <strong class="souligne">puis</strong> WP_J.
+		</li>
+	</ul>
+	<p>
+		<span class="souligne">Attention :</span> ne pas oublier de paramétrer les fichiers de configuration des différents modules :
+	</p>
+		<ul>
+			<li>
+				s8j.properties : authapp.nom.application=logica.
+			</li>
+			<li>
+				paramMetier.properties : stats.log.mode=file.
+			</li>
+			<li>
+				emplacement de la clé de chiffrage (fic/<strong>userXX</strong>/cles: logica.p12)
+			</li>
+		</ul>
+			<h4 class="souligne texteGras">Étape 2: Installation des composants IHM</h4>
+		<ul>
+			<li>
+				Installer, configurer et déployer l'ensemble des composants IHM
+				(qui ne sont pas des ShareLibs). Effectuer les script de test
+				d'installation (/app/<strong>userXX</strong>/script) lorsqu'ils existent.
+			</li>
+			<li>
+				installer, configurer et déployer toutes les ShareLibs sauf
+				VP_X(elles doivent être présentes dans le fichier plan.xml du dossier
+				de configuration du composant WP_X).
+			</li>
+			<li>
+				installer et configurer VP_X, <strong>ne pas déployer.</strong>
+			</li>
+			<li>
+				installer et configurer WP_X, <strong>ne pas déployer.</strong>
+			</li>
+			<li>
+				installer et configurer L1_Z (ce module n'est pas un module
+				applicatif mais un module de configuration, il ne se déploie pas.)
+			</li>
+			<li>
+				déployer VP_X <strong>puis</strong> WP_X.
+			</li>
+			<li>
+				lancer la propagation à partir du composant WP_X :
+				cn_app_propagate.sh -upload
+			</li>
+		</ul>
+		<p>
+			<span class="souligne">Attention :</span> 
+			ne pas oublier de paramétrer les fichiers de configuration de WP_X:
+		</p>
+		<ul>
+			<li>
+				Param.properties: installation.portail.serveur.prod=1 pour
+				l'affichage des cartes vitales virtuelle.
+			</li>
+			<li>
+				Toutes les composants répertoriés dans le paragraphe propagation
+				du fichier plan.xml doivent être installés avant la propagation.
+			</li>
+		</ul>
+		<p>
+			Erreurs rencontrées lors de la propagation:
+		</p>
+		<ul>
+			<li>
+				En cas d'échec de la propagation, le poids des fichiers de log
+				augmente rapidement jusqu'à saturation. vérifier avec la commande
+				"df" à la ligne "/log" et supprimer éventuellement les logs contenus
+				dans /log/<strong>wpXX</strong>/
+			</li>
+			<li>
+				"Le type push et le content type push n'existent pas ou doivent
+				être ajoutés manuellements". il s'agit d'une erreur lors de la
+				création du domaine. il faut faire une demande de recréation du
+				domaine.
+			</li>
+			<li>
+				"Des éléments du desktop ne peuvent être ajouté ou sont déjà
+				présents". Il faut q'un desktop soit créé manuellement sur le domaine
+				(via la console d'admin) et retenter la propagation.
+			</li>
+		</ul>
+		<p class="souligne texteGras">
+			Mise à jour d'un composant:
+		</p><hr>
+		<p>
+			Lors de la mise à jour d'un composant, il faut penser aux les
+			éléments suivants:
+		</p>
+		<ul>
+			<li>
+				vérifier les versions des cadres weblogic, national et applicatif
+				et les installer si besoin.
+			</li>
+			<li>
+				installer le composant via le Ks avec l'option -f pour forcer la version.
+			</li>
+			<li>
+				vérifier que l'unique archive .war présente dans le dossier web
+				pointe vers le bon dossier du livrable (ex : C8132002X.war ->
+				/app/c8a01/liv/C8132002X/web/C8132002X.war)
+			</li>
+			<li>
+				une modification des fichiers de configuration ne nécessite pas
+				un redéploiement de l'application mais juste la commande
+				cn_app_update.sh
+			</li>
+			<li>
+				après redéploiement d'un application, le seul état valide est :
+				state_active. Si un autre état est présent : recommencer le
+				déploiement et/ou vérifier le serveur.
+			</li>
+		</ul>
+		<p>
+			I. Vérification de l'état du domaine IHM.
+		</p><hr>
+		<p>
+			Saisir la commande <strong>cn_domain_status.sh :</strong>
+		</p>
+		<div class="row">
+			<img class="col-xs-12 img-responsive" src="cnamts/habillage/images/image1EnvEspacePro.png"></img>
+		</div>
+		<p>
+			Vérifier que toutes les Share-Libs dépendante du chapeau soient
+			déployées (/app/wpa00/conf/plan.xml). Dans le cas contraire, il
+			apparaît l'erreur suivante :
+		</p>
+		<div class="row">
+			<img class="col-xs-6 img-responsive" src="cnamts/habillage/images/image2EnvEspacePro.png"></img>
+		</div>
+		<p>
+		<div class="row">
+			<img class="col-xs-2 img-responsive" src="cnamts/habillage/images/image3EnvEspacePro.png"></img>
+		</div>
+			est le seul état correct pour
+			les serveurs et les applications. Si le composant n'est pas dans cet
+			état, il faut tenter : undeploy/deploy, redémarrage du serveur, DDS.
+		</p>
+	<p class="souligne texteGras">
+		<h2>II. Vérification du domaine métier.</h2>
+	</p>
+	<p>
+		Les composants de ce domaine ne sont pas tous des ShareLibs. Si l'un
+		des composant est KO, tout ou partie des fonctionnalités de
+		l'application seront KO. Or ces composants sont déployés double dans
+		des clusters. Si l'un des 2 serveurs du cluster s'arrête, le service
+		reste partiellement disponible (il faut que la requête arrive sur le
+		serveur OK).
+	</p>
+	<div class="row">
+			<img class="col-xs-12 img-responsive" src="cnamts/habillage/images/image4EnvEspacePro.png"></img>
+		</div>
+	<p class="souligne texteGras">
+		<h2>III. Erreur lors des undeploy/deploy.</h2>
+	</p><hr>
+	<p>
+		Lorsque les commandes cn_app_manage -deploy ou cn_app_manage
+		-undeploy provoquent une erreur, il existe deux solutions:
+	</p>
+	<ul>
+		<li>
+			Arrêter le domaine, vider les fichiers cache et temp du domaine et
+			des serveurs puis relancer le domaine.
+		</li>
+		<li>
+			via la console technique portail admin, effectuer la commande
+			deploy / undeploy.
+		</li>
+	</ul>
+	<p class="souligne texteGras">
+		<h2>IV. Logs</h2>
+	</p><hr>
+	<p>
+		Les logs d'installation des composants se trouvent dans les fichiers
+		: /log/&lt;userXX&gt;
+	</p>
+	<p>
+		Les logs créés lors de l'utilisation de l'espace pro se trouvent dans /log/&lt;userDomain&gt;
+	</p>
+	<p class="souligne texteGras">
+		<h2>V. Configuration</h2>
+	</p><hr>
+	<p>
+		Si le problème persiste toujours, il faut vérifier si les webs
+		services de la CNAM sont toujours en marche (cf wiki : <a href="#">Catalogue des
+		services en Dev</a>)
+	</p>
+	<p>
+		Ensuite il s'agit sûrement d'un problème de configuration. Il faut
+		vérifier les dossiers conf des composants impliqués. Attention, dans
+		le cas de WP_X, VP_X, L1_Z : le L1_Z doit toujours être installé en
+		dernier (même en cas de mise à jour de WP ou VP). idem pour la partie
+		métier : B4_Z doit toujours être installé après WP_J et VP_J.
+	</p>
+</div>

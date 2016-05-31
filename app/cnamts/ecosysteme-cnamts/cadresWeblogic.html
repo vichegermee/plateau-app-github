@@ -1,0 +1,54 @@
+<div class="container backgroundContainer">
+	<pre><h3 class="center pre">Cadres Weblogic</h3></pre>
+	<h3>Généralités</h3>
+	<p>
+		La plupart des applications à la CNAMTS sont maintenant sur un
+		socle technique Weblogic. La version peut être différente en fonction
+		de l'application.
+	</p>
+
+	<p>
+		Pour s'intégrer dans le SI de la CNAMTS, les équipes de DIT nous
+		fournissent des cadres Weblogic qui apportent les dépendances
+		nécessaires au fonctionnement de l'application en évitant de les
+		dupliquer une fois sur leurs serveurs. Ces cadres Weblogic nous sont
+		fournis sous forme d'EAR que l'on doit intégrer dans Eclipse sous
+		forme de Weblogic Shared Libraries. Ces EAR contiennent les librairies
+		communes à la plupart des projets (log4j, apache commons ...).
+	</p>
+
+	<p>
+		Sur serveurs AIX, les cadres applicatifs Weblogic apportent
+		également la déclaration des ressources requises par l'application,
+		comme par exemple les datasources JDBC ou les files JMS.
+	</p>
+
+	<p>
+		Ces cadres doivent être demandés à l'aide d'un formulaire :
+	</p>
+
+	<p>
+		D2I-WLG-W-CDE-AAVV-2.doc
+	</p>
+
+	<p>
+		Il faut aussi toujours joindre le Dossier d'Architecture, qu'il
+		ait été modifié ou non.
+	</p>
+
+	<p>
+		Il faut savoir que pour les applications Web, le cadre Toplink
+		est intégré directement dans le cadre Weblogic. S'il y a regénération
+		du cadre Toplink, il faut donc bien penser à demander une regénération
+		du cadre Weblogic.
+	</p>
+
+	<h3>
+			Installation d'une application weblogic avec son cadre
+	</h3>
+	<p>
+		Afin d'installer un composant CNAMTS sur les environnements de
+		recette usine, se reporter à la doc d'installation fournie (dans le
+		composant _D) que cela soit pour les cadres ou nos applications.
+	</p>
+</div>

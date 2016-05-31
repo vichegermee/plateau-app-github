@@ -1,0 +1,79 @@
+[{
+  "name": "Olivier De Robien",
+  "manager": "null",
+  "photo": "",
+  "title": "Programme 2 -Espace Pro"
+
+}, {
+  "name": "Nicolas Toumazeau",
+  "manager": "Olivier De Robien",
+  "photo": "",
+  "title": "Chef de projet",
+  "projet": "Projet MODE"
+}, {
+  "name": "Kathy Poitevin",
+  "manager": "Nicolas Toumazeau",
+  "photo": "",
+  "title": "Responsable d'applications",
+  "projet": "Projet MODE"
+}, {
+  "name": "Christophe Arene",
+  "manager": "Nicolas Toumazeau",
+  "photo": "",
+  "title": "Expert technique",
+  "projet": "Projet MODE"
+}, {
+  "name": "Noémie Chauvin",
+  "manager": "Kathy Poitevin",
+  "photo": "",
+  "title": "Responsable d'applications",
+  "projet": "Projet AAT"
+},
+{
+  "name": "Sylvain Joyeau",
+  "manager": "Noémie Chauvin",
+  "photo": "",
+  "title": "Responsable d'applications",
+  "projet": "Projet HD"
+}, {
+  "name": "Julien Martin",
+  "manager": "Christophe Arene",
+  "photo": "",
+  "title": "Expert technique",
+  "projet": "Projet MODE"
+}, {
+  "name": "David Laurent",
+  "manager": "Sylvain Joyeau",
+  "photo": "",
+  "title": "Responsable d'applications",
+  "projet": "Projet PMT"
+},
+{
+  "name": "Laurent Perret",
+  "manager": "David Laurent",
+  "photo": "",
+  "title": "Responsable d'applications",
+  "projet": "Projet MODE"
+},
+{
+  "name": "Benoit d'Abrigeon",
+  "manager": "Julien Martin",
+  "photo": "",
+  "title": "Expert technique",
+  "projet": "Software Engineering"
+},
+{
+  "name": "Lucie Perrier",
+  "manager": "Laurent Perret",
+  "photo": "",
+  "title": "Responsable d'applications",
+  "projet": "Projet MODE"
+},
+{
+  "name": "Nicolas Maurille",
+  "manager": "Benoit d'Abrigeon",
+  "photo": "",
+  "title": "Expert technique",
+  "projet": "Projet MODE"
+}
+]

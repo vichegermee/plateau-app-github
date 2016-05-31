@@ -1,0 +1,125 @@
+<div class="container backgroundContainer">
+	<pre><h3 class="center pre">Environnements machine CNAMTS</h3></pre>
+	<p>
+		La CNAMTS nous fournit des serveurs pour tester les applications
+		développées par le plateau. Ces machines ont des configuration
+		techniques proches des machines de production (AIX, J9 ...).
+	</p>
+	<p>
+		Ces serveurs sont répartis par utilisation de la manière suivante :
+	</p>
+	<div>
+		<ul>
+			<li>
+				Actarus : Machine IHM pour le portail ST1.x
+			</li>
+			<li>
+				Alcor : Machine Back Office Portail
+			</li>
+			<li>
+				Alcor3 : Machine Médiation avec des domaines 2 caractères ST1.x
+			</li>
+			<li>
+				Alcor4 : Machine Médiation avec des domaines 4 caractères ST1.x
+			</li>
+			<li>
+				Rahan : Machine Back Office avec des domaines 4 caractères ST2.x
+			</li>
+			<li>
+				Mafalda : Machine Base de Données
+			</li>
+			<li>
+				Vanoise : Machine Base de Données
+			</li>
+			<li>
+				Argentière : Machine Batch (hors SpringBatch)
+			</li>
+			<li>
+				Achille : Machine Batch (SpringBatch) 
+			</li>
+			<li>
+				Vougeot : Machine Back Office ST1.x
+			</li>
+			<li>
+				Vercot : Machine pour les cartesvitales virtuelles
+			</li>
+		</ul>
+	</div>
+	<p>
+		Sur ces machines, les cadres nationaux sont aussi installés.
+	</p>
+	<p>
+		A chaque application est associée un ou plusieurs users applicatifs
+		sur ces serveurs (en fonction du nombre d'environnement à notre
+		disposition). Chaque user applicatif doit porter le nom suivant :
+	</p>
+	<p>&lt;code applicatif&gt;&lt;usage&gt;&lt;instance&gt;.</p>
+	<p>Pour nos environnements de dev, l'usage doit être "a".</p>
+	<p>
+		Pour les nouvelles applications, c'est au chef de projet de faire la demande de user applicatif au travers d'une DDS sur ClearQuest.
+	</p>
+	<p>
+		Les applications sont ensuite déployées sur un domaine (autre user
+		applicatif particulier). Ce domaine peut être de 2 ou 4 caractères (le
+		nombre de lettres du user) en fonction du cadre national associé à
+		l'application (KW04 - 2 caractères; KW05 - 4 caractères). Ces users
+		applicatifs sont prédéfinis pour les environnements de production par
+		DIT dans les cadres Weblogic. Il peuvent être surchargés (comme c'est
+		fait sur nos environnements de dev) à l'aide du fichier
+		"application.properties" dans le répertoire conf du user applicatif.
+		L'installation du cadre Weblogic va ensuite permettre de faire le lien
+		entre le user applicatif et le user domaine.
+	</p>
+	<p>
+		Ces cadres nationaux permettent d'exécuter les commandes
+		d'administration des serveurs Weblogic sur lesquels sont déployés nos
+		applications :
+	</p>
+	<p>
+	<div>
+		<ul>
+			<li>
+				cn_app_status.sh : affiche le statut de l'application
+			</li>
+			<li>
+				cn_domain_status.sh -cluster cxx : affiche le statut du cluster cxx
+			</li>
+			<li>
+				cn_app_manage.sh -deploy : déploie l'application associée au user
+				applicatif, et crée les ressources liées (datasources, users EJB,
+				...)
+			</li>
+			<li>
+				cn_app_manage.sh -undeploy : supprime l'application associée au
+				user applicatif, ainsi que les ressources liées (datasources, users
+				EJB, ...)
+			</li>
+			<li>
+				cn_app_manage.sh - update : met à jour l'application associée au
+				user applicatif (revient à recharger l'EAR/le WAR et la conf, mais
+				ne recrée pas les ressources applicatives)
+			</li>
+			<li>
+				cn_check_cadnat.sh : répertorie les liens associés au user
+				applicatif (pour déterminer les cadres installés)
+			</li>
+			<li>
+				cn_domain_start.sh -cluster cxx : démarre le cluster cxx du user domaine
+			</li>
+			<li>
+				cn_domain_stop.sh -cluster cxx : stoppe le cluster cxx du user domaine
+			</li>
+			<li>
+				cn_domain_restart.sh -cluster cxx : redémarre le cluster cxx du user domaine.
+			</li>
+		</ul>
+	</div>
+	<p>
+		Sur les machines de dev, les domaines weblogic sont généralement
+		mutualisés entre plusieurs applications (plusieurs projets). Nous
+		n'avons donc pas la main pour redémarrer les domaines; il faut à
+		chaque fois faire des DDS à Support_dev en cas de besoin. La seule
+		exception est la machine Actarus, sur laquelle nous avons les droits
+		domaines.
+	</p>
+</div>

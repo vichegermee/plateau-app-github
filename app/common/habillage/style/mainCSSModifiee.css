@@ -1,0 +1,435 @@
+.node {
+  cursor: pointer;
+}
+org-dpo-esp-pro>svg{
+  width:auto !important;
+  height:auto !important;
+  margin-left: 10rem;
+}
+.node circle {
+  fill: #fff;
+  /*stroke: steelblue;*/
+  stroke: rgba(17, 146, 184, 1);
+  stroke-width: 5px;
+}
+
+.link {
+  fill: none;
+  stroke: #CF022B;
+  stroke-width: 3px;
+}
+
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+body {
+position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+        height: 100%;
+    margin:0;
+    padding:0;
+    //background-size: 100% ;
+    width:100%;
+    color:black;
+}
+body:before {
+        content: "";
+        position: fixed;
+        height: 100%;
+		width: 100%;
+        background: url("../images/background.jpg") no-repeat center fixed;
+        background-size: cover;
+        z-index: -1;
+         -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    }
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header, .marketing, .footer {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#menu_header li:hover>.sousMenu {
+	display: block;
+
+}
+
+
+.menu_page_accueil {
+
+	float:right;
+}
+
+.img_menu {
+	position: absolute;
+	z-index: 2;
+}
+
+.img_bienvenue {
+	position: absolute;
+	z-index: 2;
+}
+
+.menu_plateau {
+	position: relative;
+	top: 1.7rem;
+	height: 8em;
+	margin-top: 0.8rem;
+	margin-left: 10em;
+}
+
+.content_img_plateau {
+	margin-bottom: 2em;
+	margin-top: 5em;
+}
+
+.menu_cnamts {
+	position: relative;
+	height: 8em;
+	margin-left: 17.5em;
+	width: 8em;
+	top: 2.5em;
+}
+
+.menu_principale {
+	position: relative;
+	height: 8em;
+	top: -0.3em
+}
+
+.menu_projetOutil {
+	position: relative;
+	height: 5em;
+	margin-left: 3.6em;
+	top: 2.5em;
+	width: 30em
+}
+
+.menu_nouveauCollaborateur {
+	position: relative;
+	height: 8em;
+	margin-left: 5em;
+	bottom: 3.1rem;
+}
+
+.plateau_title {
+	position: absolute;
+	z-index: 2;
+	font-size: 180%;
+	margin-left: 1.7em;
+	bottom: 3.5rem;
+	color: black;
+}
+
+.cnamts_title {
+	position: absolute;
+	z-index: 2;
+	font-size: 180%;
+	margin-left: 1.7em;
+	margin-top: 1.5em;
+	bottom: 3.5rem;
+	color: black;
+}
+
+._title {
+	position: absolute;
+	z-index: 2;
+	top: 2em;
+	left: 0.5em;
+	font-size: 180%;
+	margin-left: 2em;
+	margin-top: 1em;
+}
+
+.projet_title {
+	position: absolute;
+	z-index: 2;
+	font-size: 180%;
+	margin-left: 2.5em;
+	margin-top: 1.5em;
+	bottom: 3.5rem;
+	color: black;
+}
+
+.nouveauCollaborateur_title {
+	position: absolute;
+	z-index: 2;
+	font-size: 180%;
+	margin-left: 2em;
+	margin-top: 1.5em;
+	bottom: 3.5rem;
+	color: black;
+}
+
+.content-plateau {
+	height: 7em;
+}
+
+.content_img_nouveauCollaborateur {
+	margin-top: 100px;
+}
+
+.content-droiteHorizontale {
+	position: relative;
+	top: 3.1rem;
+	left: 13rem;
+}
+
+.content_lineFromProjetToCenter {
+	position: relative;
+	top: 3rem;
+	right: 48.8rem;
+}
+
+.content_lineFromProjetToCenter .hrProjetsEtOutils{
+	height: 2px;
+	margin-top:6rem;
+	color: #000;
+	background-color: #000;
+	border: none;
+	width:72.5%;
+	float: left;
+}
+
+.img_plateau {
+	background-image: url(../images/carre1.jpg);
+	width: 15em;
+	height: 8em;
+}
+
+.img_cnamts {
+	background-image: url(../images/carre1.jpg);
+	width: 15em;
+	height: 8em;
+}
+
+.img_projets {
+	background-image: url(../images/carre1.jpg);
+	width: 30em;
+	height: 8em;
+}
+
+.img_nouveauCollaborateur {
+	background-image: url(../images/carre1.jpg);
+	width: 25em;
+	height: 8em;
+}
+
+.lineFromCnamtsToCenter {
+	width: 19.5rem;
+	height: 6rem;
+}
+.content-droiteHorizontale .hrCnamts{
+	height: 2px;
+	margin-top:6rem;
+	color: #000;
+	background-color: #000;
+	border: none;
+	width:66%;
+	float: left;
+}
+
+.lineFromProjetToCenter {
+	background-image: url(../images/droite_horizontale.png);
+	width: 21.5rem;
+	height: 6rem;
+}
+.lineFromPlateauTocenter{
+	position: relative;
+	left: 75rem;
+	width: 13.8rem;
+	height: 10rem;
+	margin-bottom: 0.3rem;
+}
+.lineFromPlateauTocenter  .hrPlateau{
+	height: 9rem;
+	float:top;
+	margin-top:1rem;
+	margin-bottom:0rem;
+	color: #000;
+	background-color: #000;
+	border: none;
+	width:2px;
+	float:right;
+}
+
+img[alt*="bienvenue"] {
+	width: 35em;
+	height: 14em;
+}
+
+.lineFromNouveauCollaborateurToCenter {
+	left: 75rem;
+	width: 13.8rem;
+	height: 10rem;
+	position: relative;
+	top: 6.9rem;
+}
+.lineFromNouveauCollaborateurToCenter .hrNouveauCollaborateur{
+	height: 9rem;
+	float:top;
+	margin-top:1rem;
+	margin-bottom:10rem;
+	color: #000;
+	background-color: #000;
+	border: none;
+	width:2px;
+	float:right;
+}
+
+/* Custom page header */
+.header {
+
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 40px;
+	padding-bottom: 19px;
+}
+
+#menu_header li a {
+	color: #fff !important;
+}
+#menu_header{
+	margin-left:10rem;
+}
+#menu_header li ul li a {
+	color: #000 !important;
+}
+
+#menu_header li a:active {
+	color: #000;
+}
+
+.btn_page_accueil {
+	float: right;
+	margin: 1rem;
+}
+
+.footer {
+	height: 60px;
+	color: #777;
+	background-color: #ebe7e7;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.container-narrow>hr {
+	margin: 30px 0;
+}
+
+.container {
+	padding-top: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	box-shadow: 0 5px 5px 0 rgba(255,0,0,0.5),0 2px 10px 0 rgba(0,0,0,0.5)
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+	text-align: center;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+	font-size: 21px;
+	padding: 14px 24px;
+}
+
+.img-circle {
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	-ms-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+	opacity: 0.5;
+}
+
+.img_enter {
+	-moz-transform: rotate(5deg) scale(1.10);
+	-webkit-transform: rotate(5deg) scale(1.10);
+	-o-transform: rotate(5deg) scale(1.10);
+	-ms-transform: rotate(5deg) scale(1.10);
+	transform: rotate(5deg) scale(1.10);
+	opacity: 1;
+}
+
+.img_leave {
+	-moz-transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: "all 0.5s ease-in-out 0s;
+	-o-transition: "all 0.5s ease-in-out 0s;
+	-ms-transition: " all 0.5s ease-in-out 0s;
+	transition: "all 0.5s ease-in-out 0s;
+	opacity: 0.1;
+}
+
+.marketing {
+	margin: 40px 0;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+.marketing p+h4 {
+	margin-top: 28px;
+}
+
+#decorationLine {
+	height: 1em;
+	background-color: #CF022B;
+	width: 100.9%;
+}
+
+.app_nav {
+	border-radius: 0px 0px 0px 0px;
+	background-color: #CF022B;
+}
+
+/* Responsive: Portrait tablets and up */
+
+/* Remove the padding we set earlier */
+.header, .marketing, .footer {
+	padding-left: 0;
+	padding-right: 0;
+}
+/* Space out the masthead */
+.header {
+
+}
+/* Remove the bottom border on the jumbotron for visual effect */
+.jumbotron {
+	border-bottom: 0;
+}
+
+.souligne {
+	text-decoration: underline;
+}
+
+.center {
+	text-align: center;
+}
+
+.center pre {
+	font-family: Georgia;
+
+}
+
+.info_important {
+	font-weight: bold;
+	color: #CF022B;
+}

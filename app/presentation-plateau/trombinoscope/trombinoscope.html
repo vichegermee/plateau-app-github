@@ -1,0 +1,70 @@
+<div class="container backgroundContainer">
+	<pre>
+		<h2 class="center pre">Trombinoscope du plateau</h2>
+	</pre>
+	<blockquote>
+		<p>
+			Le plateau est constitué d'environ ***** allCollaborateurs. Chaque
+			collaborateur à un rôle et une tâche précise. Nous vous présentons le
+			trombinoscope du plateau regroupant les différents collaborateurs par
+			fonctions.
+		</p>
+	</blockquote>
+	<div class="row">
+		<div class="col-xs-2 boutonOpenAll">
+			<span>
+				<button type="button" class="btn btn-secondary row couleurBouton" ng-click="openCollapse()">
+					<div class="col-xs-6">
+						Open all 
+					</div>
+					<div class="col-xs-6">
+						<span class="glyphicon glyphicon-chevron-down"></span>
+					</div>
+				</button>
+			</span>
+		</div>
+		<div class="col-xs-2 boutonOpenAll">
+			<span>
+				<button type="button" class="btn btn-secondary row couleurBouton" ng-click="closeCollapse()">
+					<div class="col-xs-6">
+						Close all 
+					</div>
+					<div class="col-xs-6">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</div>
+				</button>
+			</span>
+		</div>
+	</div>
+	<div ng-repeat="fonctionAAfficher in fonctionsAAfficher">
+		<div class="row">
+			<span>
+				<button type="button" class="btn btn-secondary row buttonByFunction" ng-click="fonctionAAfficher.isCollapsed = !fonctionAAfficher.isCollapsed">
+					<div class="col-xs-6">
+						{{personnes[fonctionAAfficher.libFonction][0].fonction.libFonction}}
+					</div>
+					<div class="col-xs-6">
+						<i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-right': fonctionAAfficher.isCollapsed, 'glyphicon-chevron-down': !fonctionAAfficher.isCollapsed}"></i>
+					</div>
+				</button>
+			</span>
+			<hr class="separateur_horizontal">
+			<div uib-collapse="fonctionAAfficher.isCollapsed" class="row containerCollabRow">
+				<div class="col-xs-4 containerCollabCol" ng-repeat="personne in personnes[fonctionAAfficher.libFonction]">
+					<div class="col-xs-6">
+						<img alt="img_collaborateur" src="{{personne.localPhoto}}">
+					</div>
+					<div class="col-xs-6">
+						<span class="nom_collaborateur">{{personne.nom}} {{personne.prenom}}</span>
+						<hr class='separateur_nom_fonction'>
+						<span> {{personne.poste}} </span><br>
+						<span> {{personne.bureau}} </span>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<hr class="separationFonction">
+			</div>
+		</div>
+	</div>
+</div>

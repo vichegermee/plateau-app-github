@@ -1,0 +1,47 @@
+{
+	"intitule":"Organisation direction pole ouest",
+	"collaborateurs":[
+	{
+	"idCollabs":1,
+	"nom":"Pierre Tinet",
+	"secteurActivite":"Direction pole ouest",
+	"locationPhoto":""
+	},
+	{
+		"idCollabs":2,
+	"nom":"Eric Roussille",
+	"secteurActivite":"Direction pole ouest-Fabrication",
+	"locationPhoto":""
+	},
+	{
+		"idCollabs":3,
+	"nom":"Alain Le Marchand",
+	"secteurActivite":"Domaine Bénéficiares",
+	"locationPhoto":""
+	},
+	{
+		"idCollabs":4,
+	"nom":"Gérard Pepion",
+	"secteurActivite":"Programme 1",
+	"locationPhoto":""
+	},
+	{
+		"idCollabs":5,
+	"nom":"Olivier De Robien",
+	"secteurActivite":"Programme 2-Espace Pro",
+	"locationPhoto":""
+	},
+	{
+		"idCollabs":6,
+	"nom":"Cécile Palard-Fabien",
+	"secteurActivite":"Domaine référentiels et produits médicaux",
+	"locationPhoto":""
+	},
+	{
+		"idCollabs":7,
+	"nom":"Tristan Besnier",
+	"secteurActivite":"",
+	"locationPhoto":""
+	}
+	]
+}

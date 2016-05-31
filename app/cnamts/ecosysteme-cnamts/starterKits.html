@@ -1,0 +1,117 @@
+<div class="container backgroundContainer">
+	<pre>
+		<h3 class="center pre">Starter Kits</h3>
+	</pre>	
+	<p>
+		Le Starter Kit apporte le socle de développement CNAMTS dans la
+		librairie SocleJK.jar. Cette librairie contient les utilitaires
+		fournis par la CNAMTS tels que le CommonsConfiguration.
+	</p>
+	<p>
+		Lors de l'instanciation du SK par DDST, il nous est fourni un projet
+		d'exemple appelé GestionFamille et qui contient différents cas
+		d'utilisation auxquels nous devons nous référer pour respecter les
+		normes CNAMTS. Il est indispensable, au démarrage du projet, de
+		nettoyer ces cas d'utilisation en les supprimant. Le script
+		"build-remove-example.xml", présent dans le projet install dans le
+		répertoire script, existe pour cela mais il ne vide pas tout et il
+		faut finaliser le travail manuellement. Ce script est piloté par le
+		fichier "build-remove-example.properties".
+	</p>
+	<p>
+		La gestion des exceptions est faite à l'aide d'aspects déclenchés
+		entre chacune des couches :
+	</p>
+	<ul>
+		<li>
+			Entre la couche DS et BS pour les exceptions de types accès aux données.
+		</li>
+		<li>
+			Entre la couche BS et MS pour les exceptions de types métier ou technique.
+		</li>
+		<li>
+			Entre la couche MS et la couche d'exposition pour les exceptions de types métier ou technique
+		</li>
+	</ul>
+	<p>
+		Il existe quelques incohérences dans la gestion des exceptions
+		telles qu'elle est faite aujourd'hui mais elles seront corrigées dans
+		le SK V11. Effectivement, l'ensemble des excpetions est réifiée ce qui
+		entraîne une perte du contexte déclenchant de l'exception initiale. De
+		plus, une analyse de l'exception est relancée dans chacun des aspects
+		pour vérifier le type d'exception levée et l'éventuelle action à
+		mettre en oeuvre pour la traiter. Enfin, les exceptions utilisées
+		n'étendent pas RuntimeException ce qui peut poser des problèmes
+		d'interception sans relancement.
+	</p>
+	<p>
+		Malgré toutes ces remarques, il est strictement interdit de modifier
+		ces classes d'aspects qui sont fournies par la CNAMTS (sauf si cela
+		est demandé explicitement par le projet). De manière plus générale, il
+		ne faut surtout pas modifier le code qui est fourni par la CNAMTS pour
+		éviter de prendre la responsabilité sur du code qui n'est pas
+		développé par SopraStéria.
+	</p>
+	<p class="texteGras">
+		Spécificités SKV10
+	</p>
+	<p>
+		Le Starter Kit V10 présente l'organisation d'un projet telle qu'elle
+		doit être à la CNAMTS.
+	</p>
+	<p>
+		Le projet est organisé en sous projets de la manière suivante :
+	</p>
+	<ul>
+		<li>
+			install : le répertoire contenant les scripts et fichiers de
+			configuration nécessaires au sas de refabrication
+		</li>
+		<li>
+			MetierXX : le projet contenant les sources des services métiers
+		</li>
+		<li>
+			MetierXXEAR : le projet conteneur qui sera déployé
+		</li>
+		<li>
+			MetierXXws : la couche d'exposition Web Service pour les projets Web Service
+		</li>
+		<li>
+			MetierXXEJB : la couche d'exposition EJB pour les projets EJB
+		</li>
+		<li>
+			MetierXXInterface : La couche d'interface et de constantes qui
+			sont exposées aux différents clients
+		</li>
+	</ul>
+	<p>
+		Les projets install, MetierXXEAR, MetierXXws, MetierXXEJB et
+		MetierXXInterface sont des projets très simples et il faut s'inspirer
+		des projets existants ou de ceux contenus dans le SK.
+	</p>
+	<p>
+		Par contre, le projet MetierXX contient la logique métier du projet.
+		Il est organisé en couche de la façon suivante :
+	</p>
+	<ul>
+		<li>
+			MS : Master Service, il s'agit de la couche d'orcherstration des
+			services métiers
+		</li>
+		<li>
+			BS : Business Service, il s'agit de la couche de service métier.
+			Elle contient toute la logique métier et peut orchestrer plusieurs DS
+			au besoin.
+		</li>
+		<li>
+			MS : Master Service, il s'agit de la couche d'orcherstration des
+			services métiers
+		</li>
+		<li>
+			DB : Data Base, il s'agit de la couche d'accès aux données
+		</li>
+	</ul>
+	<p class="texteGras">
+		Spécificités SK Batch
+	</p>
+</div>

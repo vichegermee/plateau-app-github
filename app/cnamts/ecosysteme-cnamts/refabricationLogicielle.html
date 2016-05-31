@@ -1,0 +1,51 @@
+<div class="container backgroundContainer">
+	<pre><h3 class="center pre">Refabrication logicielle</h3></pre>
+	<p>
+		Pour pouvoir déployer une application, il faut d'abord la
+		refabriquer (construire l'archive qui va être déployée).
+	</p>
+	<p>
+		Cette refabrication est effectuée à l'aide du sas de refabrication
+		logicielle (disponible au travers du CVSWeb qui est présenté par la
+		suite).
+	</p>
+	<p>
+		Le sas de refabrication se déclenche via le CVSWeb (présenté par la
+		suite) en lançant le build.sh du tag préalablement posé sur le
+		composant à installer. Ce dernier va déclencher la refabrication en
+		lançant le build.xml (ant) qui est développé par nos soins. Ce script
+		ant doit faire la compilation et le packaging du livrable sous forme
+		d'une archive WAR ou EAR en fonction de l'usage. Il doit aussi
+		rationaliser la configuration et ne conserver que les fichiers liés à
+		la production.
+	</p>
+	<p>
+		Un lien est disponible afin de visualiser l'ensemble des
+		refabrications en cours :
+		<a href="http://refabrce.cnqd.cnamts.fr/refabcvsSuivi.php">
+			http://refabrce.cnqd.cnamts.fr/refabcvsSuivi.php
+		</a>
+	</p>
+	<p>
+		Une bonne pratique est que tous les fichiers de configuration non
+		modifiables par l'exploitant soient directement intégrés à l'archive.
+		La CNAMTS utilise son propre installeur qui gère les fichiers de
+		configuration à l'aide d'extension particulière ".modele". Le contenu
+		de ces fichiers sera présenté dans la partie suivante. Après exécution
+		du script ant, le répertoire conf ne doit donc contenir que des
+		fichiers ".modele".
+	</p>
+	<p>
+		Le sas de refabrication va ensuite archiver le contenu du livrable
+		sous la forme d'un tar.gz et le déposer dans le sas de refabrication
+		accessible depuis toutes les machines de la cnamts
+		(/refab_centrale/sas_rci/cnamts/stX.Y/TAG).
+	</p>
+	<p>
+		Cette étape n'est effectué que jusqu'à l'Intégration (équipe DTI).
+		DTI publie ensuite les archives refabriquées sur une application de
+		diffusion (Gediff). Les exploitants (qualif, préprod et prod) et
+		l'équipe bench vont chercher sur cette application de diffusion les
+		archives qu'ils ont à installer.
+	</p>
+</div>

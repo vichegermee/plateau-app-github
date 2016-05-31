@@ -1,0 +1,15 @@
+.img_crah {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+img[alt*="crah"] {
+	width: 85rem;
+}
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 14px;
+    border-left: 5px solid #eee;
+}

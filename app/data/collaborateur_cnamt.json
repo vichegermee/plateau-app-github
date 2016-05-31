@@ -1,0 +1,356 @@
+[
+  {
+	"idCollabs":1,
+	"nom":"Nicolas Revel",
+	"poste":"Directeur général",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction générale"
+
+},
+			{
+	"idCollabs":2,
+	"nom":"Luc Barret",
+	"poste":"MCN, directeur général adjoint, délégué aux affaires médicales",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+
+},
+{
+	"idCollabs":3,
+	"nom":"Francois Meurisse",
+	"poste":"Direction concilliation",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":4,
+	"nom":"Michelle Carzon",
+	"poste":"Direction du groupe Ugecam",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":5,
+	"nom":"Dominique Polton",
+	"poste":"Conseillére auprés du Directeur général",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":6,
+	"nom":"Delphine Champetier",
+	"poste":"Mission Cabinet du Directeur général",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":7,
+	"nom":"Claude Gissot",
+	"poste":"Direction de la stratégie,des études et des statistiques",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":8,
+	"nom":"Mathilde Lignot-Leloup",
+	"poste":"Inconnu",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":9,
+	"nom":"Eric Le Boulaire",
+	"poste":"Direction déléguée aux opérations",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":10,
+	"nom":"Dr Pierre Fender",
+	"poste":"Direction de léaudit, du contréle contentieux et de la répression des fraudes",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":11,
+	"nom":"Marine Jeantet",
+	"poste":"Direction des risques professionnels",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":12,
+	"nom":"Alain Issarni",
+	"poste":"Direction déléguée des systémes déinformation",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+},
+{
+	"idCollabs":13,
+	"nom":"Joél Dessaint",
+	"poste":"Direction déléguée des finances et de la comptabilité",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+},
+{
+	"idCollabs":14,
+	"nom":"Nelly Haudegand",
+	"poste":"Direction de léinformation et de la communication",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+},
+{
+	"idCollabs":15,
+	"nom":"Isabelle Bertin",
+	"poste":"Secrétariat Général",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+},
+{
+	"idCollabs":16,
+	"nom":"Franéois-Xavier Brouck",
+	"poste":"Direction des assurés",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":17,
+	"nom":"Philippe Trotabas",
+	"poste":"Direction du réseau administratif et de la contractualisation",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":18,
+	"nom":"Jean-Paul Prieur",
+	"poste":"Direction du réseau médical et des opérations de gestion du risque",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":19,
+	"nom":"Jean-Michel Lesage",
+	"poste":"Direction Péle Paris Val de Seine",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+},
+{
+	"idCollabs":20,
+	"nom":"Patrick Pannet",
+	"poste":"Direction du pilotage et des fonctions transverses",
+	"imageUrl":"A venir",
+"directionRattachement":"Direction support",
+"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+}
+},
+{
+	"idCollabs":21,
+	"nom":"Aurélie Le Sueur",
+	"poste":"Direction des ressources humaines de léEP",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+},
+{
+	"idCollabs":22,
+	"nom":"Philippe Ulmann",
+	"poste":"Direction de léoffre de soins",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":23,
+	"nom":"David Xardel",
+	"poste":"Direction de léorganisation, de léoptimisation et du marketing",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":24,
+	"nom":"Laurence Gautier-Pascaud",
+	"poste":"Direction des ressources humaines des réseaux",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+	"idCollabs":25,
+	"nom":"Pierre Tinet",
+	"poste":"Direction Péle Ouest",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+},
+{
+	"idCollabs":26,
+	"nom":"Loéc Tourlourat",
+	"poste":"Direction opérations informatiques et technologiques",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+},
+{
+	"idCollabs":27,
+	"nom":"Patrick Bessey",
+	"poste":"Direction de la gestion des moyens et de léenvironnement de travail",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+},
+{
+	"idCollabs":28,
+	"nom":"Cécile Alomar",
+	"poste":"Direction des maétrises déouvrage métier",
+	"imageUrl":"A venir",
+	"fonction":{
+	"codeFonction":"DI",
+	"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction de gestion du risque"
+},
+{
+"idCollabs":29,
+"nom":"Pascal Tenaud",
+"poste":"Direction Péle Rhéne-Alpes",
+"imageUrl":"A venir",
+"fonction":{
+"codeFonction":"DI",
+"libFonction":"Directeurs"
+},
+"directionRattachement":""
+},
+{
+"idCollabs":30,
+"nom":"Céline Entfellner",
+"poste":"Direction de la sécurité",
+"imageUrl":"A venir",
+"fonction":{
+"codeFonction":"DI",
+"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+},
+{
+"idCollabs":31,
+"nom":"Pedram Nikfoad",
+"poste":"Direction du développement et intégration de solutions externes",
+"imageUrl":"A venir",
+"fonction":{
+"codeFonction":"DI",
+"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+},
+{
+"idCollabs":32,
+"nom":"Nicolas Gandilhon",
+"poste":"Direction de la stratégie des ressources et des moyens",
+"imageUrl":"A venir",
+"fonction":{
+"codeFonction":"DI",
+"libFonction":"Directeurs"
+},
+"directionRattachement":"Direction support"
+}
+]
