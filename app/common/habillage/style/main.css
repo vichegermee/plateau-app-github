@@ -32,31 +32,44 @@ a{
 }
 
 body {
-position: absolute;
-        top: 0; bottom: 0; left: 0; right: 0;
-        height: 100%;
+	position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+	height: 100%;
     margin:0;
     padding:0;
-    //background-size: 100% ;
-    width:100%;
+    background-size: 100% ;
+    min-width:50%;
     color:black;
+	overflow: auto;
 }
 body:before {
-        content: "";
-        position: fixed;
-        height: 100%;
-		width: 100%;
-        background: url("../images/background.jpg") no-repeat center fixed;
-        background-size: cover;
-        z-index: -1;
-         -webkit-transition: all 0.3s ease-in-out;
+	content: "";
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background: url("../images/background.jpg") no-repeat center fixed;
+	background-size: cover;
+	z-index: -1;
+	-webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     }
 
+.contenu{
+	min-width: 160px;
+	max-width: 95%;
+	margin: 3rem auto 3rem auto;
+}
 
+.menu_centrale{
+	height: 11.3rem;
+	border: solid;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	border-radius: 500px;
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header, .marketing, .footer {
 	padding-left: 15px;
@@ -76,7 +89,8 @@ body:before {
 .img_menu {
 	position: absolute;
 	z-index: 2;
-	width: 94%;
+	width: 100%;
+	height: 100%;
 	display: block;
     margin-left: auto;
     margin-right: auto;
@@ -104,13 +118,6 @@ body:before {
 	top: 2.5em;
 }
 
-.img_bienvenue {
-	position: absolute;
-	z-index: 2;
-	display: block;
-    margin: 0 auto;
-}
-
 .menu_principale {
 	position: relative;
 	height: 8em;
@@ -131,23 +138,31 @@ body:before {
 	margin-left: 5em;
 	bottom: 3.1rem;
 }
-
-.plateau_title, .cnamts_title , .projet_title, .nouveauCollaborateur_title {
+.plateau_title{
 	position: absolute;
 	z-index: 1;
 	color: black;
-	margin-top: 4rem;
+	margin-top: 3rem;
 	font-size: 30px;
+	text-align: center;
+	width: 100%;
+	line-height:1em;
+}
+ .menu_title {
+	position: absolute;
+	z-index: 1;
+	color: black;
+	margin-top: 3rem;
+	font-size: 30px;
+	text-align: center;
+	width: 100%;
 }
 
 ._title {
-	position: absolute;
-	z-index: 2;
-	top: 2em;
-	left: 0.5em;
+	width: 100%;
 	font-size: 180%;
-	margin-left: 2em;
-	margin-top: 1em;
+	margin-top: 3rem;
+	text-align: center;
 }
 
 .content-plateau {
@@ -188,11 +203,7 @@ body:before {
 
 .img_projets {
 	background-image: url(../images/carre1.jpg);
-	width: 32.40em;
 	height: 8em;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .img_nouveauCollaborateur {
@@ -207,28 +218,34 @@ body:before {
 }
 
 .content-droiteHorizontale{
-	margin-top: 5rem;
+	margin-top: 3rem;
+	padding-right: 0;
+	padding-left: 0;
 }
 .content-droiteHorizontale .hrCnamts{
 	height: 2px;
 	width: 100%;
 	color: #000;
 	background-color: #000;
-	position: absolute;
-	bottom: 0;
 	
+}
+.lineVerticale{
+	padding-right: 0;
+}
+.hrVerticale{
+	width: 2px;
+	height: 10rem;
+	color: #000;
+	background-color: #000;
+	float: right;
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .lineFromProjetToCenter {
 	background-image: url(../images/droite_horizontale.png);
 	width: 21.5rem;
 	height: 6rem;
-}
-.lineFromPlateauTocenter {
-	height: 10rem;
-	border-style: solid;
-	border-width: 0px 2px 0px 0px;
-	
 }
 
 img[alt*="bienvenue"] {
@@ -324,7 +341,7 @@ img[alt*="bienvenue"] {
 	-o-transition: all 0.5s ease-in-out 0s;
 	-ms-transition: all 0.5s ease-in-out 0s;
 	transition: all 0.5s ease-in-out 0s;
-	opacity: 0.5;
+	opacity: 0.6;
 }
 
 .img_enter {
@@ -333,7 +350,7 @@ img[alt*="bienvenue"] {
 	-o-transform: rotate(5deg) scale(1.10);
 	-ms-transform: rotate(5deg) scale(1.10);
 	transform: rotate(5deg) scale(1.10);
-	opacity: 1;
+	opacity: 0.8;
 }
 
 .img_leave {
@@ -404,10 +421,7 @@ img[alt*="bienvenue"] {
 
 .img_plateau_2{
 	height: 11.3rem;
-}
-
-.menu_milieu{
-	margin-top: 3.5rem;
+	padding-left: 0;
 }
 .image_bienvenue{
 	background-image: url(../images/rond.GIF);
