@@ -52,7 +52,7 @@ var tree_structure = {
                                             title: 1
                                         },
                                         image: "flags/srb.jpg",
-                                        HTMLclass: "first-draw",
+                                        HTMLclass: "first-draw"
 
                                     },
                                     {

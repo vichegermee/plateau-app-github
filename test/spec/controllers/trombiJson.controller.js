@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 describe('trombiJsonCtrl',function(){
 	var $httpBackend, $rootScope, createController, authRequestHandler, testTaille1, 
 		testDoublonTaille1,testDoublonTaille2, testFonctionsCollapse;

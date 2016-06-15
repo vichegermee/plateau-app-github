@@ -35,7 +35,7 @@ img[alt*="logo_sopra"] {
 
 img[alt*="img_collaborateur"] {
 	width: 15rem;
-	height: 20rem;
+	height: 18rem;
 }
 
 .info_collaborateur {
@@ -126,11 +126,25 @@ a, a:hover{
 	color: white;
 }
 
+.itemTestAjoutCollab, .itemTestAjoutCollab:hover{
+	text-decoration: none;
+	color: black;
+}
+
 .buttonByFunction{
 	margin-left: 2rem;
 	background-color: #CF022B; 
 	color:#fff;
 }
+
+.boutonAjouterNouveauCollab{
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	margin-left: 2rem;
+	text-decoration: none;
+	float: right;
+}
+
 .boutonOpenAll{
 	font-size: 2rem;
 	margin-bottom: 2rem;
@@ -139,7 +153,46 @@ a, a:hover{
 	float: right;
 }
 
+.popupAjoutCollab{
+	padding: 2rem;
+}
+
+.inputAjoutCollab{
+	margin: 1rem;
+	padding: 0;
+}
+
+.modal-footer button{
+	width: 10rem;
+	height: 5rem;
+}
+.modal-footer{
+	margin: auto;
+}
+
+.modal-title{
+	margin-left: 2.5rem;
+}
+
 .couleurBouton, .couleurBouton:hover, .couleurBouton:visited, .couleurBouton:link, .couleurBouton:active{
 	background-color: #CF022B; 
 	color:#fff;
+}
+
+canvas {
+	border:1px solid #000;
+	float:left;
+	clear:both;
+}
+#download {
+	float:left;
+	cursor:pointer;
+	color:#ccc;
+	padding:3px;
+}
+#download:hover {
+	color:#fff;
+}
+.etoileObligatoire{
+	margin-left: -2.75rem;
 }

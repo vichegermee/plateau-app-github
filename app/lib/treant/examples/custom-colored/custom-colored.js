@@ -14,7 +14,7 @@ var config = {
         text: {
             name: "Mark Hill",
             title: "Chief executive officer",
-            contact: "Tel: 01 213 123 134",
+            contact: "Tel: 01 213 123 134"
         },
         image: "../headshots/2.jpg"
     },
@@ -24,7 +24,7 @@ var config = {
         HTMLclass: 'light-gray',
         text:{
             name: "Joe Linux",
-            title: "Chief Technology Officer",
+            title: "Chief Technology Officer"
         },
         image: "../headshots/1.jpg"
     },
@@ -34,7 +34,7 @@ var config = {
         HTMLclass: 'blue',
         text:{
             name: "Linda May",
-            title: "Chief Business Officer",
+            title: "Chief Business Officer"
         },
         image: "../headshots/5.jpg"
     },
@@ -44,7 +44,7 @@ var config = {
         text:{
             name: "John Green",
             title: "Chief accounting officer",
-            contact: "Tel: 01 213 123 134",
+            contact: "Tel: 01 213 123 134"
         },
         image: "../headshots/6.jpg"
     },

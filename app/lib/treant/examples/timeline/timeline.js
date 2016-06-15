@@ -30,7 +30,7 @@ var simple_chart_config = {
 				text: { desc: "", name: "01.01.2014" },
 				children: [
 					{
-						text: { name: "Event 1" },
+						text: { name: "Event 1" }
 					},
 					{
 						text: { name: "Event 2" }

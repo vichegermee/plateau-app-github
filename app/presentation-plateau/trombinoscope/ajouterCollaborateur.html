@@ -1,0 +1,114 @@
+<div class="popupAjoutCollab">
+	<div class="modal-header row">
+		<h3 class="modal-title">NOUVEAU COLLABORATEUR</h3>
+	</div>
+	<div class="modal-body">
+		<span class="text-danger">{{messageErreur}}</span>
+		<form name="form" class="form-horizontal">
+			<div class="row inputAjoutCollab form-group">
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="Nom" data-ng-model="nom" name="cNom" required="" />
+				</div>
+				<span class="col-md-1 text-danger etoileObligatoire">*</span>
+				<div class="col-md-5">
+					<div ng-show="form.$submitted || form.cNom.$touched">
+						<span ng-show="form.cNom.$error.required" class="text-danger">
+							Entrez votre nom
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row inputAjoutCollab form-group">
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="Prénom" data-ng-model="prenom" name="cPrenom" required="" />
+				</div>
+				<span class="col-md-1 text-danger etoileObligatoire">*</span>
+				<div class="col-md-5">
+					<div ng-show="form.$submitted || form.cPrenom.$touched">
+						<span ng-show="form.cPrenom.$error.required" class="text-danger">
+							Entrez votre prénom
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row inputAjoutCollab form-group">
+				<div class="col-md-6">
+					<input type="text" class="form-control" placeholder="Poste" data-ng-model="poste" name="cPoste" required="" />
+				</div>
+				<span class="col-md-1 text-danger etoileObligatoire">*</span>
+				<div class="col-md-5">
+					<div ng-show="form.$submitted || form.cPoste.$touched">
+						<span ng-show="form.cPoste.$error.required" class="text-danger">
+							Quel est votre poste ?
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row inputAjoutCollab form-group">
+				<div class="col-md-6">
+					<select id="listeBureaux" ng-model="bureaux" class="form-control" name="cBureau"
+						   ng-options="bureau for bureau in bureaux" required="">
+					</select>
+				</div>
+				<span class="col-md-1 text-danger etoileObligatoire">*</span>
+				<div class="col-md-5">
+					<div ng-show="form.$submitted || form.cBureau.$touched">
+						<span ng-show="form.cBureau.$error.required" class="text-danger">
+							Entrez votre bureau
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="row inputAjoutCollab form-group">
+				<div class="col-md-6">
+					<!-- <input type="text" src="" placeholder="Photo" data-ng-model="localPhoto" name="cLocalPhoto" required="" /> -->
+					<input type="file" ng-model="localPhoto" src="localPhoto" file-changed />
+					<img file-preview="localPhoto" alt="img_collaborateur" />
+					{{localPhoto.name}}
+				</div>
+			</div>
+			<div class="row inputAjoutCollab form-group">
+				<div class="col-md-6">
+					<!-- <input type="text" class="form-control" placeholder="Fonction" data-ng-model="libFonction" name="cLibFonction" required=""/>
+					 --><select id="listeFonctions" ng-model="fonctionsAAfficher" 
+							class="form-control" name="cLibFonction" ng-options="fonction.libFonction for fonction in fonctionsAAfficher" required="">
+					</select>
+				</div>
+				<span class="col-md-1 text-danger etoileObligatoire">*</span>
+				<div class="col-md-5">
+					<div ng-show="form.$submitted || form.cLibFonction.$touched">
+						<span ng-show="form.cLibFonction.$error.required" class="text-danger">
+							Quelle est votre fonction ?
+						</span>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="modal-footer row">
+		<div class="col-md-6">
+			<button class="btn btn-primary " type="button" ng-click="ok(localPhoto)">OK</button>
+			<button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+		</div>
+	</div>
+</div>
+<!-- <body >
+    <form name="myForm">
+        <div>Crop Image and Upload</div>
+        <button ngf-select ng-model="picFile" accept="image/*">
+            Select Picture</button>
+        <div ngf-drop ng-model="picFile" ngf-pattern="image/*" class="cropArea">
+            <img-crop image="picFile  | ngfDataUrl" result-image="croppedDataUrl" ng-init="croppedDataUrl=''"></img-crop>
+        </div>
+        <div>
+            <img ng-src="{{croppedDataUrl}}" />
+        </div>
+        <button ng-click="upload(croppedDataUrl, picFile.name)">Submit</button> 
+            
+        <span class="progress" ng-show="progress >= 0">
+          <div style="width:{{progress}}%" ng-bind="progress + '%'"></div>
+        </span>
+        <span ng-show="result">Upload Successful</span>
+        <span class="err" ng-show="errorMsg">{{errorMsg}}</span>
+    </form>
+</body> -->

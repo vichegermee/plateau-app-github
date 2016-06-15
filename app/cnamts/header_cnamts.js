@@ -1,4 +1,4 @@
-'use strict';
+/* 'use strict';
 var app = angular.module('plateauAppApp');
 
 app.controller('headerController',  ['$scope','$state', function ($scope,$state) {
@@ -12,3 +12,4 @@ app.controller('headerController',  ['$scope','$state', function ($scope,$state)
    //$state.reload('cnamts.dirPoleOuest');
 
 }]);
+ */

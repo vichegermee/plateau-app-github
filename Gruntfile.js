@@ -50,6 +50,13 @@ module.exports = function(grunt) {
 
 	// loads all grunt tasks
 	require('load-grunt-tasks')(grunt);
+	
+	require('jit-grunt')(grunt, {
+		useminPrepare: 'grunt-usemin',
+		ngtemplates: 'grunt-angular-templates',
+		cdnify: 'grunt-google-cdn',
+		configureProxies: 'grunt-connect-proxy'
+	});
 
 	// Configurable paths for the application
 	var appConfig = {
@@ -57,9 +64,7 @@ module.exports = function(grunt) {
 		dist : 'dist'
 	};
 
-
-	grunt
-			.initConfig({
+	grunt.initConfig({
 
 			
 				yeoman : appConfig,
@@ -126,11 +131,19 @@ module.exports = function(grunt) {
 						hostname : 'localhost',
 						livereload : 35729
 					},
+					 proxies: [
+					{
+						context: '/collaborateurs', 
+						host: 'localhost',
+						port: 3001
+					}],
 					livereload : {
 						options : {
 							open : true,
 							middleware : function(connect) {
+								 var proxy = require('grunt-connect-proxy/lib/utils').proxyRequest;
 								return [
+										proxy,   
 										connect.static('.tmp'),
 										connect()
 												.use(
@@ -488,6 +501,12 @@ module.exports = function(grunt) {
 						src : '{,*/}*.css'
 					}
 				},
+				exec: {
+					lancement_json_server: {
+						cmd: 'json-server --watch app/data/trombinoscope.json --port 3001',
+						stderr: false
+					}
+				},
 
 				/**
 				 * @ngdoc function
@@ -499,6 +518,7 @@ module.exports = function(grunt) {
 				 * 		        dist: lancer a la fois les taches mises entre crochets.
 				 */
 				concurrent : {
+					testGruntExec : ['exec:lancement_json_server','watch'],
 					server : [ 'copy:styles' ],
 					test : [ 'copy:styles' ],
 					dist : [ 'copy:styles', 'imagemin', 'svgmin' ]
@@ -554,11 +574,10 @@ module.exports = function(grunt) {
 
 				grunt.task.run([ 'clean:server', 'wiredep',
 						'concurrent:server', 'postcss:server',
-						'connect:livereload', 'watch' ]);
+						'connect:livereload', 'concurrent:testGruntExec' ]);
 			});
 //Tache de developpement
-	grunt
-			.registerTask(
+	grunt.registerTask(
 					'server',
 					'DEPRECATED TASK. Use the "serve" task instead',
 					function(target) {

@@ -11,6 +11,13 @@
 		</p>
 	</blockquote>
 	<div class="row">
+		<div class="col-xs-2 boutonAjouterNouveauCollab">
+			<span>
+				<button type="button" class="btn btn-secondary row couleurBouton" ng-click="open()">
+					Ajouter un collaborateur
+				</button>
+			</span>
+		</div>
 		<div class="col-xs-2 boutonOpenAll">
 			<span>
 				<button type="button" class="btn btn-secondary row couleurBouton" ng-click="openCollapse()">
@@ -66,5 +73,8 @@
 				<hr class="separationFonction">
 			</div>
 		</div>
+	</div> 
+	<div ng-repeat="collaborateur in retourJsonServer">
+		{{collaborateur}}
 	</div>
 </div>

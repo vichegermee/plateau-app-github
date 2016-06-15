@@ -7,12 +7,10 @@
  * C'est le noyau de l'application.On y retrouve les differents etats ,services
  * et controllers de notre application
  */
-	angular.module('d3', []);
 	angular.module('plateauAppApp.controllers', []);
-	angular.module('plateauAppApp.directives', ['d3']);
 	angular.module('plateauAppApp', ['ngAnimate', 'ngAria', 'ngCookies',
 		'ngMessages', 'ngResource', 'ngRoute', 'ngSanitize', 'ngTouch',
-		'ui.router', 'ui.bootstrap', 'angularModalService' ,'plateauAppApp.controllers', 'plateauAppApp.directives'])
+		'ui.router', 'ui.bootstrap', 'angularModalService','ngFileUpload','plateauAppApp.controllers'])
 	.run(['$rootScope', '$state', function($rootScope, $state) { $rootScope.$state = $state; }])
 	.config([ '$stateProvider', '$urlRouterProvider',
 		function($stateProvider, $urlRouterProvider) {
@@ -62,16 +60,23 @@
 						controllerAs:'trombinoscope'
 						}
 					}
-			})
-			.state('plateau.presentationPlateau', {
+			}).state('plateau.trombinoscope.ajouterNouveauCollab', {
+				url : '/trombinoscope/ajouterUnNouveauCollaborateur',
+				views:{
+					'@plateau':{
+						templateUrl : 'presentation-plateau/trombinoscope/ajouterCollaborateur.html',
+						controller:'ajouterCollaborateurInstanceCtrl',
+						controllerAs:'ajouterCollaborateurInstance'
+					}
+				}
+			}).state('plateau.presentationPlateau', {
 				url : '/presentation-plateau',
 				views:{
 					'@plateau':{
 						templateUrl : 'presentation-plateau/presentationPlateau.html'
 					}
 			}
-			})
-			.state('plateau.communication_equipe', {
+			}).state('plateau.communication_equipe', {
 				url : '/communication-equipe',
 				views:{
 					'@plateau':{

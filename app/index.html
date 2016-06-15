@@ -22,6 +22,8 @@
 <link rel="stylesheet" href="lib/treant/Treant.css" type="text/css"/>
 <link rel="stylesheet" href="cnamts/habillage/style/collapsable_orgDpo.css">
 <link rel="stylesheet" href="lib/treant/vendor/perfect-scrollbar/perfect-scrollbar.css">
+<link rel="stylesheet" type="text/css" href="bower_components/ng-img-crop/compile/minified/ng-img-crop.css">
+
 <!-- endbuild -->
 
 </head>
@@ -73,31 +75,24 @@
 	<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 	<script src="bower_components/angular-modal-service/dst/angular-modal-service.js"></script>
 	<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-	<script src="bower_components/d3/d3.js"></script>
+	<script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
 	<!-- endbower -->
 	<!-- endbuild -->
 	<script src="app.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
-	<script src="lib/treant/vendor/raphael.js"></script>
-	<script src="lib/treant/Treant.js"></script>
-	<script src="lib/treant/vendor/jquery.min.js"></script>
-	<script src="lib/treant/vendor/jquery.easing.js"></script>
-	 	<script src="cnamts/organigramme/dirPoleOuest.directive.js"></script>
 	<!-- build:js({.tmp,app}) scripts/scripts.js -->
 
 	<script src="common/main.js"></script>
 	<script src="cnamts/header_cnamts.js"></script>
 	<script src="presentation-plateau/plateau_header.controller.js"></script>
-	<script src="presentation-plateau/trombinoscope/trombinoscope.controller.js"></script>
-	<script src="presentation-plateau/trombinoscope/modal.controller.js"></script>
+	<script src="presentation-plateau/trombinoscope/controllers/trombinoscope.controller.js"></script>
+	<script src="presentation-plateau/trombinoscope/controllers/modal.controller.js"></script>
 	<script src="cnamts/organigramme/organigrammeClient.controller.js"></script>
 	<script src="cnamts/organigramme/dirPoleOuestEspPro.controller.js"></script>
-	<script src="cnamts/organigramme/organigrammeClient.directive.js"></script>
-	<script src="common/d3.js"></script>
-  <script src="cnamts/organigramme/dirPoleOuestEspPro.directive.js"></script>
-	<script src="presentation-plateau/trombinoscope/trombiJson.controller.js"></script>
-  <script src="cnamts/organigramme/dirPoleOuest.controller.js"></script>
-  <script src="tagcanvas.min.js"></script>
+	<script src="presentation-plateau/trombinoscope/controllers/trombiJson.controller.js"></script>
+	<script src="cnamts/organigramme/dirPoleOuest.controller.js"></script>
+	<script src="presentation-plateau/trombinoscope/services/trombiJsonService.js"></script>
+	<script src="presentation-plateau/trombinoscope/controllers/ajouterCollaborateur.js"></script>
+	<script src="presentation-plateau/trombinoscope/controllers/fileUpload.js"></script>
 	<!-- endbuild -->
 </body>
 </html>

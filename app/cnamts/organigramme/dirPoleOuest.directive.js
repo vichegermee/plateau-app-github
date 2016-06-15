@@ -3,7 +3,7 @@
 * @name plateauAppApp.controller:trombinoscopeCtrl
 * @description Directive permettant d'afficher notre organigramme de la dpo
 */
-(function() {
+/* (function() {
 	angular.module('plateauAppApp.directives').directive('orgDpo', displayOrgDpo);
 	function displayOrgDpo() {
 		return {
@@ -117,3 +117,4 @@ new Treant(chart_config);
 	}
 
 	})();
+ */

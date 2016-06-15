@@ -8,7 +8,7 @@ var config = {
   },
   node : {
     collapsable : true,
-    drawLineThrough : false,
+    drawLineThrough : false
 
   },
   animation : {
@@ -22,7 +22,7 @@ pierre_tinet = {
     HTMLclass: 'blue',
   text : {
     name : "Pierre Tinet",
-    title : "Direction pole ouest",
+    title : "Direction pole ouest"
   }
 };
 eric_roussille = {

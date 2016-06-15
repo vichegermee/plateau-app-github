@@ -1,544 +1,544 @@
 {
-	"collaborateurs" : [
-		{	
-			"idCollab" : 1,
-			"nom" : "BARRAUD",
-			"prenom" : "Aldo",
-			"poste" : "Directeur de projet, responsable de l'activité du plateau(et responsable de tous les projets sans CP-STATELI",
-			"bureau" : "C03",
-			"localPhoto" : "../presentation-plateau/habillage/images/dps/barraud.png",
-			"fonction" : {
-				"codeFonction":"DPs",
-				"libFonction" : "Directeur de projets"
-			}
-		},
-		{
-			"idCollab" : 2,
-			"nom" : "GASTINEAU",
-			"prenom" : "Michel",
-			"poste" : "Directeur de projet DESIR",
-			"bureau" : "C19",
-			"localPhoto" : "../presentation-plateau/habillage/images/dps/gastineau.png",
-			"fonction" : {
-				"codeFonction":"DPs",
-				"libFonction" : "Directeur de projets"
-			}
-		},
-		{
-			"idCollab" : 3,
-			"nom" : "PARIOLEAU",
-			"prenom" : "Christian",
-			"poste" : "Responsable du compte CNAM Pole Ouest et Directeur du projet Espace Pro Haute Dispo",
-			"bureau" : "C03",
-			"localPhoto" : "../presentation-plateau/habillage/images/dps/parioleau.png",
-			"fonction" : {
-				"codeFonction":"DPs",
-				"libFonction" : "Directeur de projets"
-			}					
-		},
-		{
-			"idCollab" : 4,
-			"nom" : "",
-			"prenom" : "",
-			"poste" : "PMO du plateau",
-			"bureau" : "",
-			"localPhoto" : "../presentation-plateau/habillage/images/pmo/pmo.png",
-			"fonction" : {
-				"codeFonction":"PMO",
-				"libFonction" : "Project Management Office"
-			}
-		},
-		{
-			"idCollab" : 5,
-			"nom" : "BAPTISTE",
-			"prenom" : "Bouchet",
-			"poste" : "Responsable des projets Espace Pro, CDRi, Espace Pro Mobile, PSE, PSEi, Refonte Paiements, ROSP, Passeport, PCDD et Industrialisation",
-			"bureau" : "C06",
-			"localPhoto" : "../presentation-plateau/habillage/images/cps/bouchet.png",
-			"fonction" : {
-				"codeFonction":"CPs",
-				"libFonction" : "Chef de projets"
-			}
-		},
-		{
-			"idCollab" : 6,
-			"nom" : "GALLATO",
-			"prenom" : "Denis",
-			"poste" : "Responsable du projet MODE",
-			"bureau" : "C11",
-			"localPhoto" : "../presentation-plateau/habillage/images/cps/gallato.png",
-			"fonction" : {
-				"codeFonction":"CPs",
-				"libFonction" : "Chef de projets"
-			}
-		},
-		{
-			"idCollab" : 7,
-			"nom" : "GRAGNIC",
-			"prenom" : "Marlène",
-			"poste" : "Responsable des projets DESIR, Hippocrate et MODE",
-			"bureau" : "C11",
-			"localPhoto" : "../presentation-plateau/habillage/images/cps/gragnic.png",
-			"fonction" : {
-				"codeFonction":"CPs",
-				"libFonction" : "Chef de projets"
-			}
-		},
-		{
-			"idCollab" : 8,
-			"nom" : "LORCY",
-			"prenom" : "Jean-Marc",
-			"poste" : "Responsable des projets Haute Dispo",
-			"bureau" : "C04",
-			"localPhoto" : "../presentation-plateau/habillage/images/cps/lorcy.png",
-			"fonction" : {
-				"codeFonction":"CPs",
-				"libFonction" : "Chef de projets"
-			}
-		},
-		{
-			"idCollab" : 9,
-			"nom" : "RIOU",
-			"prenom" : "Julien",
-			"poste" : "Responsable des projets Espace Pro Haute Dispo",
-			"bureau" : "C04",
-			"localPhoto" : "../presentation-plateau/habillage/images/cps/riou.png",
-			"fonction" : {
-				"codeFonction":"CPs",
-				"libFonction" : "Chef de projets"
-			}
-		},
-		{
-			"idCollab" : 10,
-			"nom" : "SERVE",
-			"prenom" : "Jean-Baptiste",
-			"poste" : "Responsable des projets AATi, PRADO et RESID-ESMS",
-			"bureau" : "C12",
-			"localPhoto" : "../presentation-plateau/habillage/images/cps/riou.png",
-			"fonction" : {
-				"codeFonction":"CPs",
-				"libFonction" : "Chef de projets"
-			}
-		},
-		{
-			"idCollab" : 11,
-			"nom" : "DEBOS",
-			"prenom" : "Laetitia",
-			"poste" : "Rédérent fonctionnelle du plateau (principalement sur les sujets RESID-ESMS, PRADO, PSE et MODE)",
-			"bureau" : "C12",
-			"localPhoto" : "../presentation-plateau/habillage/images/referent_fonctionnel/debos.png",
-			"fonction" : {
-				"codeFonction":"RF",
-				"libFonction" : "Référent(e)s fonctionnel(le)s"
-			}
-		},
-		{
-			"idCollab" : 12,
-			"nom" : "CRAVOISIER",
-			"prenom" : "Thomas",
-			"poste" : "Référent technique surtout orienté système et supervision",
-			"bureau" : "C05",
-			"localPhoto" : "../presentation-plateau/habillage/images/referent_technique/cravoisier.png",
-			"fonction" : {
-				"codeFonction":"RT",
-				"libFonction" : "Référent(e)s technique"
-			}
-		},
-		{
-			"idCollab" : 13,
-			"nom" : "GERVAIS",
-			"prenom" : "Romain",
-			"poste" : "Référent technique sur HD",
-			"bureau" : "C05",
-			"localPhoto" : "../presentation-plateau/habillage/images/referent_technique/gervais.jpg", 
-			"fonction" : {
-				"codeFonction":"RT",
-				"libFonction" : "Référent(e)s technique"
-			}
-		},
-		{
-			"idCollab" : 14,
-			"nom" : "GONTIER",
-			"prenom" : "Frédéric",
-			"poste" : "Référent techniquesur MODE",
-			"bureau" : "C11",
-			"localPhoto" : "../presentation-plateau/habillage/images/referent_technique/gontier.jpg",
-			"fonction" : {
-				"codeFonction":"RT",
-				"libFonction" : "Référent(e)s technique"
-			}
-		},
-		{
-			"idCollab" : 15,
-			"nom" : "OLIVIER",
-			"prenom" : "Yohan",
-			"poste" : "Référent technique sur HD",
-			"bureau" : "C04",
-			"localPhoto" : "../presentation-plateau/habillage/images/referent_technique/olivier.jpg",
-			"fonction" : {
-				"codeFonction":"RT",
-				"libFonction" : "Référent(e)s technique"
-			}
-		},
-		{
-			"idCollab" : 16,
-			"nom" : "PERENNES",
-			"prenom" : "Charles",
-			"poste" : "Super Héros Espace PRO (Weblogic Portal) et MODE (JMS)",
-			"bureau" : "SNCF",
-			"localPhoto" : "../presentation-plateau/habillage/images/les_anciens/perennes.png",
-			"fonction" : {
-				"codeFonction":"Anciens",
-				"libFonction" : "Les ancien(ne)s qui pourraient vous aider"
-			}
-		},
-		{
-			"idCollab" : 17,
-			"nom" : "PLOQUIN",
-			"prenom" : "Julien",
-			"poste" : "Hotline Espace Pro et renfort MODE à ses heures perdues",
-			"bureau" : "ALFRESCO",
-			"localPhoto" : "../presentation-plateau/habillage/images/les_anciens/ploquin.jpg", 
-			"fonction" : {
-				"codeFonction":"Anciens",
-				"libFonction" : "Les ancien(ne)s qui pourraient vous aider"
-			}
-		},
-		{
-			"idCollab" : 18,
-			"nom" : "STIMPFLING",
-			"prenom" : "Fliroan",
-			"poste" : "Référent technique orienté Java et Exploitation et Course à pieds si vous le souhaitez",
-			"bureau" : "SNCF",
-			"localPhoto" : "../presentation-plateau/habillage/images/les_anciens/stimpfling.jpg",
-			"fonction" : {
-				"codeFonction":"Anciens",
-				"libFonction" : "Les ancien(ne)s qui pourraient vous aider"
-			}
-		},
-		{
-			"idCollab" : 19,
-			"nom" : "LEBRETTEVILLOIS",
-			"prenom" : "Régis",
-			"poste" : "Architecte BPL qui connaît bien la complexité du client CNAMTS",
-			"bureau" : "C120",
-			"localPhoto" : "../presentation-plateau/habillage/images/les_pompiers/lebrettevillois.jpg", 
-			"fonction" : {
-				"codeFonction":"Pompier",
-				"libFonction" : "Les pompiers"
-			}
-		},
-		{
-			"idCollab" : 20,
-			"nom" : "ROCHETEAU",
-			"prenom" : "Cyril",
-			"poste" : "Architecte BPL et responsable sécurité, connaît très bien le sujet MODE",
-			"bureau" : "C120",
-			"localPhoto" : "../presentation-plateau/habillage/images/les_pompiers/rocheteau.jpg",
-			"fonction" : {
-				"codeFonction":"Pompier",
-				"libFonction" : "Les pompiers"
-			}			
-		},
-		{
-			"idCollab" : 21,
-			"nom" : "COUTIER",
-			"prenom" : "Patrice",
-			"poste" : "Fonctionnel sur MODE et PASSEPORT",
-			"bureau" : "Angers",
-			"localPhoto" : "../presentation-plateau/habillage/images/fonctionnel_testeur/coutier.jpg", 
-			"fonction" : {
-				"codeFonction":"FT",
-				"libFonction" : "Les fonctionnel(le)s et testeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 22,
-			"nom" : "DANIEL",
-			"prenom" : "Sophie",
-			"poste" : "Fonctionnelle sur PRADO, STATELI et Hippocrate",
-			"bureau" : "C12",
-			"localPhoto" : "../presentation-plateau/habillage/images/fonctionnel_testeur/daniel.jpg", 
-			"fonction" : {
-				"codeFonction":"FT",
-				"libFonction" : "Les fonctionnel(le)s et testeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 23,
-			"nom" : "HERVE",
-			"prenom" : "Catherine",
-			"poste" : "Fonctionnelle sur PSE",
-			"bureau" : "C11",
-			"localPhoto" : "../presentation-plateau/habillage/images/fonctionnel_testeur/herve.jpg",
-			"fonction" : {
-				"codeFonction":"FT",
-				"libFonction" : "Les fonctionnel(le)s et testeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 24,
-			"nom" : "LANCINI",
-			"prenom" : "Valérie",
-			"poste" : "Fonctionnelle sur PSE et MODE",
-			"bureau" : "C11",
-			"localPhoto" : "../presentation-plateau/habillage/images/fonctionnel_testeur/lancini.jpg",
-			"fonction" : {
-					"codeFonction":"FT",
-					"libFonction" : "Les fonctionnel(le)s et testeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 25,
-			"nom" : "LE LAIN",
-			"prenom" : "Carole",
-			"poste" : "Fonctionnelle sur les projets Espace PRO, Haute dispo et MODE",
-			"bureau" : "C04",
-			"localPhoto" : "../presentation-plateau/habillage/images/fonctionnel_testeur/le_lain.jpg",
-			"fonction" : {
-				"codeFonction":"FT",
-				"libFonction" : "Les fonctionnel(le)s et testeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 26,
-			"nom" : "GARÇON",
-			"prenom" : "Thibault",
-			"poste" : "Lead Developer sur les projets AAT, PRADO et RESID-ESMS",
-			"bureau" : "C13",
-			"localPhoto" : "../presentation-plateau/habillage/images/leads_developpeurs/garcon.jpg",
-			"fonction" : {
-				"codeFonction":"LD",
-				"libFonction" : "Les Leads Developpeur(se)s"
-			}	
-		},
-		{
-			"idCollab" : 27,
-			"nom" : "LE NAVENNEC",
-			"prenom" : "Vincent",
-			"poste" : "Lead Developer sur les projets DESIR, PCDD et RESID-ESMS",
-			"bureau" : "C13",
-			"localPhoto" : "../presentation-plateau/habillage/images/leads_developpeurs/le_navennec.jpg",
-			"fonction" : {
-				"codeFonction":"LD",
-				"libFonction" : "Les Leads Developpeur(se)s"
-			}	
-		},
-		{
-			"idCollab" : 28,
-			"nom" : "RENÉ",
-			"prenom" : "Benjamin",
-			"poste" : "Lead Developer sur le projet MODE",
-			"bureau" : "C14",
-			"localPhoto" : "../presentation-plateau/habillage/images/leads_developpeurs/rene.jpg",
-			"fonction" : {
-				"codeFonction":"LD",
-				"libFonction" : "Les Leads Developpeur(se)s"
-			}	
-		},
-		{
-			"idCollab" : 29,
-			"nom" : "BACHELIER",
-			"prenom" : "Matthieu",
-			"poste" : "Développeur sur le projet Haute Dispo",
-			"bureau" : "C05",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/bachelier.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 30,
-			"nom" : "BEC",
-			"prenom" : "Gwenael",
-			"poste" : "Développeur sur le projet RESID-ESMS",
-			"bureau" : "C13",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/bec.png",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 31,
-			"nom" : "BERNARD",
-			"prenom" : "Kévin",
-			"poste" : "Développeur sur le projet RESID-ESMS",
-			"bureau" : "C13",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/bernard.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 32,
-			"nom" : "BOTREL",
-			"prenom" : "Jordan",
-			"poste" : "Développeur sur le projet MODE",
-			"bureau" : "C14",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/botrel.png",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 33,
-			"nom" : "DENIAUD",
-			"prenom" : "Maxime",
-			"poste" : "Développeur sur le projet T7 et Espace PRO",
-			"bureau" : "C14",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/deniaud.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 34,
-			"nom" : "HUCHET",
-			"prenom" : "Julien",
-			"poste" : "Développeur sur le projet MODE",
-			"bureau" : "C14",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/huchet.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 35,
-			"nom" : "LANCIEN",
-			"prenom" : "Nicolas",
-			"poste" : "Développeur sur les projets Espace PRO et Haute Dispo",
-			"bureau" : "C06",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/lancien.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 36,
-			"nom" : "LEDOUX",
-			"prenom" : "Antoine",
-			"poste" : "Développeur sur le projet Espace PRO, RESID-ESMS, Refonte paiements et ROSP",
-			"bureau" : "C13",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/ledoux.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 37,
-			"nom" : "LUCAS",
-			"prenom" : "Valentin",
-			"poste" : "Développeur sur le projet MODE et RESID-ESMS",
-			"bureau" : "C13",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/lucas.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 38,
-			"nom" : "MACHAUX",
-			"prenom" : "Frédéric",
-			"poste" : "Développeur sur les projets Espace PRO et Haute Dispo",
-			"bureau" : "C05",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/machaux.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 39,
-			"nom" : "NAJID",
-			"prenom" : "Oussama",
-			"poste" : "Développeur sur le projet PASSEPORT",
-			"bureau" : "C05",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/najid.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 40,
-			"nom" : "NAOUARI",
-			"prenom" : "Mohamed Safwen",
-			"poste" : "Développeur sur les projets PSE et RESID-ESMS",
-			"bureau" : "C13",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/naouari.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 41,
-			"nom" : "PERROT",
-			"prenom" : "Alain",
-			"poste" : "Développeur sur le projet PASSEPORT",
-			"bureau" : "C05",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/perrot.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 42,
-			"nom" : "TRAORÉ",
-			"prenom" : "Mohamed",
-			"poste" : "Développeur sur les projets DESIR, Espace PRO et Haute Dispo",
-			"bureau" : "C06",
-			"localPhoto" : "../presentation-plateau/habillage/images/developpeurs/traore.jpg",
-			"fonction" : {
-				"codeFonction":"Dev",
-				"libFonction" : "Les Developpeur(se)s"
-			}
-		},
-		{
-			"idCollab" : 43,
-			"nom" : "GÉRARD",
-			"prenom" : "Hadrien",
-			"poste" : "Alternant Mines Nantes, sujet principal Supervision",
-			"bureau" : "C12",
-			"localPhoto" : "../presentation-plateau/habillage/images/stagiaires/gerard.png",
-			"fonction" : {
-				"codeFonction":"St",
-				"libFonction" : "Les stagiaires"
-			}
-		},
-		{
-			"idCollab" : 44,
-			"nom" : "RENAUD",
-			"prenom" : "Damien",
-			"poste" : "Alternant Mines Nantes, sujet principal Industrialisation",
-			"bureau" : "C12",
-			"localPhoto" : "../presentation-plateau/habillage/images/stagiaires/renaud.jpg",
-			"fonction" : {
-				"codeFonction":"St",
-				"libFonction" : "Les stagiaires"
-			}
-		},
-		{
-			"idCollab" : 45,
-			"nom" : "ROBERT",
-			"prenom" : "Mathieu",
-			"poste" : "Stagiaire en chef alternant de MIAGE Nantes, sujet principal Industrialisation",
-			"bureau" : "C12",
-			"localPhoto" : "../presentation-plateau/habillage/images/stagiaires/robert.jpg",
-			"fonction" : {
-				"codeFonction":"St",
-				"libFonction" : "Les stagiaires"
-			}
-		}
-	]
+  "collaborateurs": [
+    {
+      "id": 1,
+      "nom": "BARRAUD",
+      "prenom": "Aldo",
+      "poste": "Directeur de projet, responsable de l'activité du plateau(et responsable de tous les projets sans CP-STATELI",
+      "bureau": "C03",
+      "localPhoto": "../presentation-plateau/habillage/images/dps/barraud.png",
+      "fonction": {
+        "codeFonction": "DPs",
+        "libFonction": "Directeur de projets"
+      }
+    },
+    {
+      "id": 2,
+      "nom": "GASTINEAU",
+      "prenom": "Michel",
+      "poste": "Directeur de projet DESIR",
+      "bureau": "C19",
+      "localPhoto": "../presentation-plateau/habillage/images/dps/gastineau.png",
+      "fonction": {
+        "codeFonction": "DPs",
+        "libFonction": "Directeur de projets"
+      }
+    },
+    {
+      "id": 3,
+      "nom": "PARIOLEAU",
+      "prenom": "Christian",
+      "poste": "Responsable du compte CNAM Pole Ouest et Directeur du projet Espace Pro Haute Dispo",
+      "bureau": "C03",
+      "localPhoto": "../presentation-plateau/habillage/images/dps/parioleau.png",
+      "fonction": {
+        "codeFonction": "DPs",
+        "libFonction": "Directeur de projets"
+      }
+    },
+    {
+      "id": 4,
+      "nom": "",
+      "prenom": "",
+      "poste": "PMO du plateau",
+      "bureau": "",
+      "localPhoto": "../presentation-plateau/habillage/images/pmo/pmo.png",
+      "fonction": {
+        "codeFonction": "PMO",
+        "libFonction": "Project Management Office"
+      }
+    },
+    {
+      "id": 5,
+      "nom": "BAPTISTE",
+      "prenom": "Bouchet",
+      "poste": "Responsable des projets Espace Pro, CDRi, Espace Pro Mobile, PSE, PSEi, Refonte Paiements, ROSP, Passeport, PCDD et Industrialisation",
+      "bureau": "C06",
+      "localPhoto": "../presentation-plateau/habillage/images/cps/bouchet.png",
+      "fonction": {
+        "codeFonction": "CPs",
+        "libFonction": "Chef de projets"
+      }
+    },
+    {
+      "id": 6,
+      "nom": "GALLATO",
+      "prenom": "Denis",
+      "poste": "Responsable du projet MODE",
+      "bureau": "C11",
+      "localPhoto": "../presentation-plateau/habillage/images/cps/gallato.png",
+      "fonction": {
+        "codeFonction": "CPs",
+        "libFonction": "Chef de projets"
+      }
+    },
+    {
+      "id": 7,
+      "nom": "GRAGNIC",
+      "prenom": "Marlène",
+      "poste": "Responsable des projets DESIR, Hippocrate et MODE",
+      "bureau": "C11",
+      "localPhoto": "../presentation-plateau/habillage/images/cps/gragnic.png",
+      "fonction": {
+        "codeFonction": "CPs",
+        "libFonction": "Chef de projets"
+      }
+    },
+    {
+      "id": 8,
+      "nom": "LORCY",
+      "prenom": "Jean-Marc",
+      "poste": "Responsable des projets Haute Dispo",
+      "bureau": "C04",
+      "localPhoto": "../presentation-plateau/habillage/images/cps/lorcy.png",
+      "fonction": {
+        "codeFonction": "CPs",
+        "libFonction": "Chef de projets"
+      }
+    },
+    {
+      "id": 9,
+      "nom": "RIOU",
+      "prenom": "Julien",
+      "poste": "Responsable des projets Espace Pro Haute Dispo",
+      "bureau": "C04",
+      "localPhoto": "../presentation-plateau/habillage/images/cps/riou.png",
+      "fonction": {
+        "codeFonction": "CPs",
+        "libFonction": "Chef de projets"
+      }
+    },
+    {
+      "id": 10,
+      "nom": "SERVE",
+      "prenom": "Jean-Baptiste",
+      "poste": "Responsable des projets AATi, PRADO et RESID-ESMS",
+      "bureau": "C12",
+      "localPhoto": "../presentation-plateau/habillage/images/cps/riou.png",
+      "fonction": {
+        "codeFonction": "CPs",
+        "libFonction": "Chef de projets"
+      }
+    },
+    {
+      "id": 11,
+      "nom": "DEBOS",
+      "prenom": "Laetitia",
+      "poste": "Rédérent fonctionnelle du plateau (principalement sur les sujets RESID-ESMS, PRADO, PSE et MODE)",
+      "bureau": "C12",
+      "localPhoto": "../presentation-plateau/habillage/images/referent_fonctionnel/debos.png",
+      "fonction": {
+        "codeFonction": "RF",
+        "libFonction": "Référent(e)s fonctionnel(le)s"
+      }
+    },
+    {
+      "id": 12,
+      "nom": "CRAVOISIER",
+      "prenom": "Thomas",
+      "poste": "Référent technique surtout orienté système et supervision",
+      "bureau": "C05",
+      "localPhoto": "../presentation-plateau/habillage/images/referent_technique/cravoisier.png",
+      "fonction": {
+        "codeFonction": "RT",
+        "libFonction": "Référent(e)s technique"
+      }
+    },
+    {
+      "id": 13,
+      "nom": "GERVAIS",
+      "prenom": "Romain",
+      "poste": "Référent technique sur HD",
+      "bureau": "C05",
+      "localPhoto": "../presentation-plateau/habillage/images/referent_technique/gervais.jpg",
+      "fonction": {
+        "codeFonction": "RT",
+        "libFonction": "Référent(e)s technique"
+      }
+    },
+    {
+      "id": 14,
+      "nom": "GONTIER",
+      "prenom": "Frédéric",
+      "poste": "Référent techniquesur MODE",
+      "bureau": "C11",
+      "localPhoto": "../presentation-plateau/habillage/images/referent_technique/gontier.jpg",
+      "fonction": {
+        "codeFonction": "RT",
+        "libFonction": "Référent(e)s technique"
+      }
+    },
+    {
+      "id": 15,
+      "nom": "OLIVIER",
+      "prenom": "Yohan",
+      "poste": "Référent technique sur HD",
+      "bureau": "C04",
+      "localPhoto": "../presentation-plateau/habillage/images/referent_technique/olivier.jpg",
+      "fonction": {
+        "codeFonction": "RT",
+        "libFonction": "Référent(e)s technique"
+      }
+    },
+    {
+      "id": 16,
+      "nom": "PERENNES",
+      "prenom": "Charles",
+      "poste": "Super Héros Espace PRO (Weblogic Portal) et MODE (JMS)",
+      "bureau": "SNCF",
+      "localPhoto": "../presentation-plateau/habillage/images/les_anciens/perennes.png",
+      "fonction": {
+        "codeFonction": "Anciens",
+        "libFonction": "Les ancien(ne)s qui pourraient vous aider"
+      }
+    },
+    {
+      "id": 17,
+      "nom": "PLOQUIN",
+      "prenom": "Julien",
+      "poste": "Hotline Espace Pro et renfort MODE à ses heures perdues",
+      "bureau": "ALFRESCO",
+      "localPhoto": "../presentation-plateau/habillage/images/les_anciens/ploquin.jpg",
+      "fonction": {
+        "codeFonction": "Anciens",
+        "libFonction": "Les ancien(ne)s qui pourraient vous aider"
+      }
+    },
+    {
+      "id": 18,
+      "nom": "STIMPFLING",
+      "prenom": "Fliroan",
+      "poste": "Référent technique orienté Java et Exploitation et Course à pieds si vous le souhaitez",
+      "bureau": "SNCF",
+      "localPhoto": "../presentation-plateau/habillage/images/les_anciens/stimpfling.jpg",
+      "fonction": {
+        "codeFonction": "Anciens",
+        "libFonction": "Les ancien(ne)s qui pourraient vous aider"
+      }
+    },
+    {
+      "id": 19,
+      "nom": "LEBRETTEVILLOIS",
+      "prenom": "Régis",
+      "poste": "Architecte BPL qui connaît bien la complexité du client CNAMTS",
+      "bureau": "C120",
+      "localPhoto": "../presentation-plateau/habillage/images/les_pompiers/lebrettevillois.jpg",
+      "fonction": {
+        "codeFonction": "Pompier",
+        "libFonction": "Les pompiers"
+      }
+    },
+    {
+      "id": 20,
+      "nom": "ROCHETEAU",
+      "prenom": "Cyril",
+      "poste": "Architecte BPL et responsable sécurité, connaît très bien le sujet MODE",
+      "bureau": "C120",
+      "localPhoto": "../presentation-plateau/habillage/images/les_pompiers/rocheteau.jpg",
+      "fonction": {
+        "codeFonction": "Pompier",
+        "libFonction": "Les pompiers"
+      }
+    },
+    {
+      "id": 21,
+      "nom": "COUTIER",
+      "prenom": "Patrice",
+      "poste": "Fonctionnel sur MODE et PASSEPORT",
+      "bureau": "Angers",
+      "localPhoto": "../presentation-plateau/habillage/images/fonctionnel_testeur/coutier.jpg",
+      "fonction": {
+        "codeFonction": "FT",
+        "libFonction": "Les fonctionnel(le)s et testeur(se)s"
+      }
+    },
+    {
+      "id": 22,
+      "nom": "DANIEL",
+      "prenom": "Sophie",
+      "poste": "Fonctionnelle sur PRADO, STATELI et Hippocrate",
+      "bureau": "C12",
+      "localPhoto": "../presentation-plateau/habillage/images/fonctionnel_testeur/daniel.jpg",
+      "fonction": {
+        "codeFonction": "FT",
+        "libFonction": "Les fonctionnel(le)s et testeur(se)s"
+      }
+    },
+    {
+      "id": 23,
+      "nom": "HERVE",
+      "prenom": "Catherine",
+      "poste": "Fonctionnelle sur PSE",
+      "bureau": "C11",
+      "localPhoto": "../presentation-plateau/habillage/images/fonctionnel_testeur/herve.jpg",
+      "fonction": {
+        "codeFonction": "FT",
+        "libFonction": "Les fonctionnel(le)s et testeur(se)s"
+      }
+    },
+    {
+      "id": 24,
+      "nom": "LANCINI",
+      "prenom": "Valérie",
+      "poste": "Fonctionnelle sur PSE et MODE",
+      "bureau": "C11",
+      "localPhoto": "../presentation-plateau/habillage/images/fonctionnel_testeur/lancini.jpg",
+      "fonction": {
+        "codeFonction": "FT",
+        "libFonction": "Les fonctionnel(le)s et testeur(se)s"
+      }
+    },
+    {
+      "id": 25,
+      "nom": "LE LAIN",
+      "prenom": "Carole",
+      "poste": "Fonctionnelle sur les projets Espace PRO, Haute dispo et MODE",
+      "bureau": "C04",
+      "localPhoto": "../presentation-plateau/habillage/images/fonctionnel_testeur/le_lain.jpg",
+      "fonction": {
+        "codeFonction": "FT",
+        "libFonction": "Les fonctionnel(le)s et testeur(se)s"
+      }
+    },
+    {
+      "id": 26,
+      "nom": "GARÇON",
+      "prenom": "Thibault",
+      "poste": "Lead Developer sur les projets AAT, PRADO et RESID-ESMS",
+      "bureau": "C13",
+      "localPhoto": "../presentation-plateau/habillage/images/leads_developpeurs/garcon.jpg",
+      "fonction": {
+        "codeFonction": "LD",
+        "libFonction": "Les Leads Developpeur(se)s"
+      }
+    },
+    {
+      "id": 27,
+      "nom": "LE NAVENNEC",
+      "prenom": "Vincent",
+      "poste": "Lead Developer sur les projets DESIR, PCDD et RESID-ESMS",
+      "bureau": "C13",
+      "localPhoto": "../presentation-plateau/habillage/images/leads_developpeurs/le_navennec.jpg",
+      "fonction": {
+        "codeFonction": "LD",
+        "libFonction": "Les Leads Developpeur(se)s"
+      }
+    },
+    {
+      "id": 28,
+      "nom": "RENÉ",
+      "prenom": "Benjamin",
+      "poste": "Lead Developer sur le projet MODE",
+      "bureau": "C14",
+      "localPhoto": "../presentation-plateau/habillage/images/leads_developpeurs/rene.jpg",
+      "fonction": {
+        "codeFonction": "LD",
+        "libFonction": "Les Leads Developpeur(se)s"
+      }
+    },
+    {
+      "id": 29,
+      "nom": "BACHELIER",
+      "prenom": "Matthieu",
+      "poste": "Développeur sur le projet Haute Dispo",
+      "bureau": "C05",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/bachelier.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 30,
+      "nom": "BEC",
+      "prenom": "Gwenael",
+      "poste": "Développeur sur le projet RESID-ESMS",
+      "bureau": "C13",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/bec.png",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 31,
+      "nom": "BERNARD",
+      "prenom": "Kévin",
+      "poste": "Développeur sur le projet RESID-ESMS",
+      "bureau": "C13",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/bernard.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 32,
+      "nom": "BOTREL",
+      "prenom": "Jordan",
+      "poste": "Développeur sur le projet MODE",
+      "bureau": "C14",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/botrel.png",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 33,
+      "nom": "DENIAUD",
+      "prenom": "Maxime",
+      "poste": "Développeur sur le projet T7 et Espace PRO",
+      "bureau": "C14",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/deniaud.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 34,
+      "nom": "HUCHET",
+      "prenom": "Julien",
+      "poste": "Développeur sur le projet MODE",
+      "bureau": "C14",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/huchet.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 35,
+      "nom": "LANCIEN",
+      "prenom": "Nicolas",
+      "poste": "Développeur sur les projets Espace PRO et Haute Dispo",
+      "bureau": "C06",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/lancien.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 36,
+      "nom": "LEDOUX",
+      "prenom": "Antoine",
+      "poste": "Développeur sur le projet Espace PRO, RESID-ESMS, Refonte paiements et ROSP",
+      "bureau": "C13",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/ledoux.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 37,
+      "nom": "LUCAS",
+      "prenom": "Valentin",
+      "poste": "Développeur sur le projet MODE et RESID-ESMS",
+      "bureau": "C13",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/lucas.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 38,
+      "nom": "MACHAUX",
+      "prenom": "Frédéric",
+      "poste": "Développeur sur les projets Espace PRO et Haute Dispo",
+      "bureau": "C05",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/machaux.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 39,
+      "nom": "NAJID",
+      "prenom": "Oussama",
+      "poste": "Développeur sur le projet PASSEPORT",
+      "bureau": "C05",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/najid.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 40,
+      "nom": "NAOUARI",
+      "prenom": "Mohamed Safwen",
+      "poste": "Développeur sur les projets PSE et RESID-ESMS",
+      "bureau": "C13",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/naouari.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 41,
+      "nom": "PERROT",
+      "prenom": "Alain",
+      "poste": "Développeur sur le projet PASSEPORT",
+      "bureau": "C05",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/perrot.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 42,
+      "nom": "TRAORÉ",
+      "prenom": "Mohamed",
+      "poste": "Développeur sur les projets DESIR, Espace PRO et Haute Dispo",
+      "bureau": "C06",
+      "localPhoto": "../presentation-plateau/habillage/images/developpeurs/traore.jpg",
+      "fonction": {
+        "codeFonction": "Dev",
+        "libFonction": "Les Developpeur(se)s"
+      }
+    },
+    {
+      "id": 43,
+      "nom": "GÉRARD",
+      "prenom": "Hadrien",
+      "poste": "Alternant Mines Nantes, sujet principal Supervision",
+      "bureau": "C12",
+      "localPhoto": "../presentation-plateau/habillage/images/stagiaires/gerard.png",
+      "fonction": {
+        "codeFonction": "St",
+        "libFonction": "Les stagiaires"
+      }
+    },
+    {
+      "id": 44,
+      "nom": "RENAUD",
+      "prenom": "Damien",
+      "poste": "Alternant Mines Nantes, sujet principal Industrialisation",
+      "bureau": "C12",
+      "localPhoto": "../presentation-plateau/habillage/images/stagiaires/renaud.jpg",
+      "fonction": {
+        "codeFonction": "St",
+        "libFonction": "Les stagiaires"
+      }
+    },
+    {
+      "id": 45,
+      "nom": "ROBERT",
+      "prenom": "Mathieu",
+      "poste": "Stagiaire en chef alternant de MIAGE Nantes, sujet principal Industrialisation",
+      "bureau": "C12",
+      "localPhoto": "../presentation-plateau/habillage/images/stagiaires/robert.jpg",
+      "fonction": {
+        "codeFonction": "St",
+        "libFonction": "Les stagiaires"
+      }
+    }
+  ]
 }

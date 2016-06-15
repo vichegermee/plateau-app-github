@@ -34,8 +34,10 @@ module.exports = function(config) {
       'bower_components/angular-ui-router/release/angular-ui-router.js',
       'bower_components/angular-modal-service/dst/angular-modal-service.js',
       'bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
-      'bower_components/d3/d3.js',
+      'bower_components/ng-file-upload/ng-file-upload.js',
       'bower_components/angular-mocks/angular-mocks.js',
+      'bower_components/angular-ui-router-uib-modal/angular-ui-router-uib-modal.js',
+      'bower_components/angular-fileupload/angular-filereader.min.js',
       // endbower
       'app/{,**/}/*.js',
       'test/mock/**/*.js',
