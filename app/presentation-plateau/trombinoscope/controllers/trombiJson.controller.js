@@ -11,36 +11,41 @@
 	angular
 		.module('plateauAppApp')
 			.controller('trombiJsonCtrl', trombiJsonCtrl);
-			trombiJsonCtrl.$inject = ['$scope','$http','$uibModal', '$log','trombiJsonService'];
-	function trombiJsonCtrl($scope, $http,$uibModal, $log,trombiJsonService){
+			trombiJsonCtrl.$inject = ['$scope', '$uibModal','trombiJsonService','$location','$anchorScroll'];
+	function trombiJsonCtrl($scope, $uibModal, trombiJsonService,$location,$anchorScroll,$document,$window){
+		
 		$scope.collaborateurs = [];
 		$scope.fonctionsAAfficher = [];
 		$scope.personnes = {};
 		$scope.count=0;
 		getData();
 
-		$scope.open = function (size,donnees1, donnees2) {
+		$scope.ajouter = function (size) {
 
-			var modalInstance = $uibModal.open({
+			$uibModal.open({
 			  animation: $scope.animationsEnabled,
 			  templateUrl: 'presentation-plateau/trombinoscope/ajouterCollaborateur.html',
 			  controller: 'ajouterCollaborateurInstanceCtrl',
 			  size: size,
 			  resolve: {
-				fonctionsAAfficher: function(){
-					return $scope.fonctionsAAfficher;
-				},
 				collaborateurs: function(){
 					return $scope.collaborateurs;
 				}
 			  }
 			});
+		  };
+		  $scope.modifier = function (collaborateur) {
 
-			/* modalInstance.result.then(function (selectedItem) {
-			  $scope.selected = selectedItem;
-			}, function () {
-			  $log.info('Modal dismissed at: ' + new Date());
-			}); */
+			$uibModal.open({
+			  templateUrl: 'presentation-plateau/trombinoscope/modifierCollaborateur.html',
+			  controller: 'modifierCollaborateurInstanceCtrl',
+			  resolve: {
+				collaborateurs: function(){
+					return $scope.collaborateurs;
+				},
+				collaborateur:collaborateur
+			  }
+			});
 		  };
 		/**
 		 * @ngdoc function

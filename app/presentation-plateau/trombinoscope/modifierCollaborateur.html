@@ -10,7 +10,7 @@
 		<form name="form" class="form-horizontal formulaireNewCollab" id="form1" ng-submit="enregistrer()" novalidate >
 			<div class="row inputAjoutCollab form-group">
 				<div class="col-md-offset-2 col-md-6">
-					<input type="text" class="form-control" placeholder="Nom" uppercase-only ng-model="$parent.nom" name="cNom" required/>
+					<input type="text" class="form-control" placeholder="Nom" uppercase-only ng-model="nom" name="cNom" required/>
 				</div>
 				<span class="col-md-1 text-danger etoileObligatoire">*</span>
 				<div class="col-md-3 champsVide">
@@ -21,7 +21,7 @@
 			</div>
 			<div class="row inputAjoutCollab form-group">
 				<div class="col-md-offset-2 col-md-6">
-					<input type="text" class="form-control" placeholder="Prénom" ng-model="prenom" name="cPrenom" required username nouveau-collab="collaborateurs" nom="$parent.nom"/>
+					<input type="text" class="form-control" placeholder="Prénom" ng-model="prenom" name="cPrenom" />
 				</div>
 				<span class="col-md-1 text-danger etoileObligatoire">*</span>
 				<div class="col-md-3 champsVide">
@@ -33,7 +33,7 @@
 			</div>
 			<div class="row inputAjoutCollab form-group">
 				<div class="col-md-offset-2 col-md-6">
-					<input type="text" class="form-control" placeholder="Poste" data-ng-model="poste" name="cPoste" required />
+					<input type="text" class="form-control" placeholder="Poste" ng-model="poste" name="cPoste" required />
 				</div>
 				<span class="col-md-1 text-danger etoileObligatoire">*</span>
 				<div class="col-md-3 champsVide">
@@ -69,7 +69,7 @@
 	</div>
 	<div class="modal-footer row">
 		<div class="col-md-9">
-			<button class="btn btn-primary " type="submit" form="form1">Enregistrer</button>
+			<button class="btn btn-primary " type="submit" form="form1">OK</button>
 			<button class="btn btn-warning" type="button" ng-click="annuler()">Annuler</button>
 			<button class="btn btn-danger" type="button" ng-click="quitter()">Quitter</button>
 		</div>

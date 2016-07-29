@@ -1,4 +1,4 @@
-<div class="container backgroundContainer">
+<div class="container backgroundContainer" id="top">
 	<pre>
 		<h2 class="center pre">Trombinoscope du plateau</h2>
 	</pre>
@@ -13,7 +13,7 @@
 	<div class="row">
 		<div class="col-xs-2 boutonAjouterNouveauCollab">
 			<span>
-				<button type="button" class="btn btn-secondary row couleurBouton" ng-click="open()">
+				<button type="button" class="btn btn-secondary row couleurBouton" ng-click="ajouter()">
 					Ajouter un collaborateur
 				</button>
 			</span>
@@ -58,14 +58,21 @@
 			<hr class="separateur_horizontal">
 			<div uib-collapse="fonctionAAfficher.isCollapsed" class="row containerCollabRow">
 				<div class="col-xs-4 containerCollabCol" ng-repeat="personne in personnes[fonctionAAfficher.libFonction]">
-					<div class="col-xs-6">
-						<img alt="img_collaborateur" src="{{personne.localPhoto}}">
+					<div class="row zoneInfosCollab">
+						<div class="col-xs-6">
+							<img alt="img_collaborateur" src="{{personne.localPhoto}}">
+						</div>
+						<div class="col-xs-6">
+							<span class="nom_collaborateur">{{personne.nom}} {{personne.prenom}}</span>
+							<hr class='separateur_nom_fonction'>
+							<span class=""> {{personne.poste}} </span><br>
+							<span> {{personne.bureau}} </span>
+						</div>
 					</div>
-					<div class="col-xs-6">
-						<span class="nom_collaborateur">{{personne.nom}} {{personne.prenom}}</span>
-						<hr class='separateur_nom_fonction'>
-						<span> {{personne.poste}} </span><br>
-						<span> {{personne.bureau}} </span>
+					<div class=" row zoneModification">
+						<button type="button" class="btn btn-secondary row couleurBouton" ng-click="modifier(personne)">
+							<span class="glyphicon glyphicon-pencil"></span>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -73,8 +80,9 @@
 				<hr class="separationFonction">
 			</div>
 		</div>
-	</div> 
+	</div>
 	<div ng-repeat="collaborateur in retourJsonServer">
 		{{collaborateur}}
 	</div>
 </div>
+<go-top />

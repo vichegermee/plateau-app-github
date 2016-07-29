@@ -1,8 +1,8 @@
 {
   "collaborateurs": [
     {
-      "id": 1,
       "nom": "BARRAUD",
+      "id": 1,
       "prenom": "Aldo",
       "poste": "Directeur de projet, responsable de l'activité du plateau(et responsable de tous les projets sans CP-STATELI",
       "bureau": "C03",
@@ -539,6 +539,30 @@
         "codeFonction": "St",
         "libFonction": "Les stagiaires"
       }
+    },
+    {
+      "nom": "GERMEE",
+      "prenom": "Viche",
+      "poste": "Stagiaire développeuse",
+      "bureau": "C11",
+      "localPhoto": "téléchargement.jpg",
+      "fonction": {
+        "codeFonction": "St",
+        "libFonction": "Les stagiaires"
+      },
+      "id": 46
+    },
+    {
+      "nom": "TSAMBA",
+      "prenom": "Steeve",
+      "poste": "stagiaire développeur",
+      "bureau": "ALFRESCO",
+      "localPhoto": "utilisateur.jpg",
+      "fonction": {
+        "codeFonction": "St",
+        "libFonction": "Les stagiaires"
+      },
+      "id": 47
     }
   ]
 }
